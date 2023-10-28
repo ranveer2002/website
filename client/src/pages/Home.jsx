@@ -4,13 +4,14 @@ import i2 from "../assets/image3.jpeg";
 import Slider from "../components/Slider";
 import HomeImage from "../assets/HomeImage.png";
 import HomeImage2 from "../assets/HomeImage2.png";
-import HomeImage3 from "../assets/HomeImage3.png";
+import HomeImage3 from "../assets/homeImage3.png";
 import HomeImage4 from "../assets/HomeImage4.png";
 import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
 import { AiOutlineCheck } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import CardCarousel from "../components/Carousel";
 
 const Home = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
@@ -205,7 +206,12 @@ const Home = (props) => {
             Certified PhysioPlus therapists offer online sessions for patients
             with mobility challenges and those seeking convenience.
           </p>
-          <img src={i3} alt="" loading="lazy" className="mx-auto rounded-2xl w-[315px] h-[179px]" />
+          <img
+            src={i3}
+            alt=""
+            loading="lazy"
+            className="mx-auto rounded-2xl w-[315px] h-[179px]"
+          />
           <button className="border border-zinc-400 bg-white text-green-700 text-xl font-semibold px-7 w-[315px] h-[54px] rounded-lg ml-6 mt-2">
             Schedule a Consultation
           </button>
@@ -214,7 +220,9 @@ const Home = (props) => {
       <section className="m-5">
         <Slider />
       </section>
-      <section></section>
+      <section>
+        <CardCarousel />
+      </section>
       <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52">
         <div>
           <p className="w-[528px] text-[45px] font-bold font-helvetica -mt-40">

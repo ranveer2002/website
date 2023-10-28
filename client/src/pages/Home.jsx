@@ -1,6 +1,6 @@
 import i1 from "../assets/image1.jpeg";
-import i2 from "../assets/image2.jpeg";
-import i3 from "../assets/image3.jpeg";
+import i3 from "../assets/image2.jpeg";
+import i2 from "../assets/image3.jpeg";
 import Slider from "../components/Slider";
 import HomeImage from "../assets/HomeImage.png";
 import HomeImage2 from "../assets/HomeImage2.png";
@@ -18,8 +18,10 @@ const Home = (props) => {
   return (
     <div>
       <section className="w-1172 h-642 font-helvatica mt-8 groupbgHomeSection">
-        <div className=" w-[690px] font-bold text-black text-[58px] font-helvetica mx-auto mt-20
-        ">
+        <div
+          className=" w-[690px] font-bold text-black text-[58px] font-helvetica mx-auto mt-20
+        "
+        >
           <div>Free, Personalized Online</div>
           <div className="-mt-5">Physiotherapy Health Care</div>
         </div>
@@ -154,37 +156,47 @@ const Home = (props) => {
         </div>
       </section>
       <section className="flex items-center mx-auto justify-evenly mt-20 font-helvetica">
-        <div className="border w-[361px] h-[440px] rounded-2xl bg-emerald-100 space-y-5 shadow-md">
-          <p className="items-center mt-6 text-3xl font-bold mx-11">
+        <div className="border w-[361px] h-[491px] rounded-2xl groupBgCard shadow-md space-y-6">
+          <p className="items-center mt-6 text-3xl font-bold mx-10">
             Clinical Treatment{" "}
             <span className="ml-6 text-3xl font-bold">Physiotherapy</span>
           </p>
           <p className="text-slate-500 text-[16px] font-normal mx-auto w-[315px]">
             High quality physiotherapy care at our PhysioPlus Centre near you.
-            Best Treatment for Ortho/Neuro and many more Issues
+            Best Treatment for Ortho / Neuro and many more Issues
           </p>
-          <img src={i1} alt="" loading="lazy" className="mx-auto rounded-2xl" />
-          <button className="border bg-neutral-700 text-white text-xl font-semibold px-7 w-[315px] h-[54px] rounded-2xl ml-6 mt-2">
+          <img
+            src={i2}
+            alt=""
+            loading="lazy"
+            className="w-[315px] h-[179px] mx-auto rounded-2xl"
+          />
+          <button className="border border-zinc-400 bg-white text-green-700 text-xl font-semibold px-7 w-[315px] h-[54px] rounded-lg ml-6">
             Schedule a Treatment
           </button>
         </div>
-        <div className="border w-[361px] h-[440px] rounded-2xl bg-emerald-100 space-y-5 shadow-md">
-          <p className="items-center mt-6 ml-12 text-3xl font-bold">
+        <div className="border w-[361px] h-[491px] rounded-2xl groupBgCard space-y-6 shadow-md">
+          <p className="items-center mt-7 mx-10 text-3xl font-bold">
             Physio Home Visits{" "}
             <span className="-ml-1 text-3xl font-bold">
               Physio's Availability
             </span>
           </p>
-          <p className="text-slate-500 text-[15px] font-normal w-[315px] ml-10">
+          <p className="text-slate-500 text-[15px] font-normal w-[315px] mx-auto">
             Home Visits by certified By PhysioPlus Physiotherapists for Patients
-            with mobility issues for patients looking for convenience
+            with mobility issues & for patients looking for convenience
           </p>
-          <img src={i2} alt="" loading="lazy" className="mx-auto rounded-2xl" />
-          <button className="border bg-neutral-700 text-white text-xl font-semibold px-7 w-[315px] h-[54px] rounded-2xl ml-6 mt-2">
+          <img
+            src={i1}
+            alt=""
+            loading="lazy"
+            className="w-[315px] h-[179px] mx-auto rounded-2xl mt-10"
+          />
+          <button className="border border-zinc-400 bg-white text-green-700 text-xl font-semibold px-7 w-[315px] h-[54px] rounded-lg ml-6">
             Schedule a Home Visit
           </button>
         </div>
-        <div className="border w-[361px] h-[440px] rounded-2xl bg-emerald-100 space-y-5 shadow-md">
+        <div className="border w-[361px] h-[491px] rounded-2xl groupBgCard space-y-6 shadow-md">
           <p className="items-center mt-6 ml-20 mr-3 text-3xl font-bold">
             Expert Online{" "}
             <span className="-ml-1 text-3xl font-bold">Physiotherapy</span>
@@ -193,8 +205,8 @@ const Home = (props) => {
             Certified PhysioPlus therapists offer online sessions for patients
             with mobility challenges and those seeking convenience.
           </p>
-          <img src={i3} alt="" loading="lazy" className="mx-auto rounded-2xl" />
-          <button className="border bg-neutral-700 text-white text-xl font-semibold px-7 w-[315px] h-[54px] rounded-2xl ml-6 mt-2">
+          <img src={i3} alt="" loading="lazy" className="mx-auto rounded-2xl w-[315px] h-[179px]" />
+          <button className="border border-zinc-400 bg-white text-green-700 text-xl font-semibold px-7 w-[315px] h-[54px] rounded-lg ml-6 mt-2">
             Schedule a Consultation
           </button>
         </div>
@@ -203,7 +215,7 @@ const Home = (props) => {
         <Slider />
       </section>
       <section></section>
-      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-60">
+      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52">
         <div>
           <p className="w-[528px] text-[45px] font-bold font-helvetica -mt-40">
             Strength Physical Health
@@ -402,7 +414,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="flex justify-evenly mt-20">
+      <section className="flex justify-evenly mt-10">
         <div className="">
           <p className="w-[519px] h-[111px] text-[35px] font-semibold mt-20">
             Unleash Extraordinary Possibilities with Our App!
@@ -453,7 +465,7 @@ const Home = (props) => {
             </svg>
           </div>
         </div>
-      </section> 
+      </section>
       <section className="mt-20">
         <div className="flex flex-col">
           <div className="bg-gray-50 self-center flex w-full max-w-[1400px] flex-col px-5 py-11 rounded-2xl max-md:max-w-full">

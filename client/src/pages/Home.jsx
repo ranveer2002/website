@@ -4,7 +4,7 @@ import i2 from "../assets/image3.jpeg";
 import Slider from "../components/Slider";
 import HomeImage from "../assets/HomeImage.png";
 import HomeImage2 from "../assets/HomeImage2.png";
-import HomeImage3 from "../assets/HomeImage3.png";
+import HomeImage3 from "../assets/homeImage3.png";
 import HomeImage4 from "../assets/HomeImage4.png";
 import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";

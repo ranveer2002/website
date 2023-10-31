@@ -10,6 +10,7 @@ import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
 import { AiOutlineCheck } from "react-icons/ai";
+import { FaWhatsappSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 
@@ -18,6 +19,9 @@ const Home = (props) => {
 
   return (
     <div>
+      <a href="https://wa.me/9928088430">
+        <FaWhatsappSquare fontSize={48} className="bottom-5 right-5 fixed text-green-500"/>
+      </a>
       <section className="w-1172 h-642 font-inter mt-20  groupbgHomeSection">
         <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
           <div className="ml-6">Free, Personalized Online</div>

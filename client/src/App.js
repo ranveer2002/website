@@ -33,7 +33,7 @@ function App() {
         />
       )}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setIsLoginClicked={setIsLoginClicked}/>} />
         <Route path="/fit-to-play" element={<FitToPlay />} />
         <Route path="/player+" element={<Player />} />
         <Route path="/physioconnect" element={<PhysioConnect />} />

@@ -13,6 +13,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
+import VerticalScroll from "../components/VerticalScroll";
 
 const Home = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
@@ -20,7 +21,10 @@ const Home = (props) => {
   return (
     <div>
       <a href="https://wa.me/9928088430">
-        <FaWhatsappSquare fontSize={48} className="bottom-5 right-5 fixed text-green-500"/>
+        <FaWhatsappSquare
+          fontSize={48}
+          className="bottom-5 right-5 fixed text-green-500"
+        />
       </a>
       <section className="w-1172 h-642 font-inter mt-20  groupbgHomeSection">
         <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
@@ -265,7 +269,7 @@ const Home = (props) => {
         </div>
       </section>
       <section className="mt-32 mb-10">
-        <div className="text-black text-4xl font-semibold ml-10 max-md:max-w-full">
+        <div className="text-black text-4xl font-semibold ml-32 max-md:max-w-full">
           Irresistible Offers Awaits You..
         </div>
         <Slider />
@@ -273,7 +277,9 @@ const Home = (props) => {
       <section className="mt-10">
         <CardCarousel />
       </section>
-      <section className="mt-24"></section>
+      <section className="mt-24">
+        <VerticalScroll />
+      </section>
       <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
         <div>
           <div className="w-[558px] h-[108px] -mt-40">

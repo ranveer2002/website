@@ -17,7 +17,7 @@ const Slider = () => {
   }, [slides.length]);
 
   return (
-    <div id="slider" className="p-8 mx-auto overflow-hidden w-80 md:w-full">
+    <div id="slider" className="p-8 mx-auto overflow-hidden w-80 md:w-[1300px]">
       {slides.map((slide, i) => (
         <div
           key={i}

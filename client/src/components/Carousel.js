@@ -66,7 +66,7 @@ const CardCarousel = () => {
   return (
     <div
       className="relative overflow-hidden w-full justify-evenly mx-auto cursor-grab"
-      style={{ width: "1400px" }}
+      style={{ width: "1200px" }}
     >
       <motion.div
         className="flex"
@@ -75,7 +75,7 @@ const CardCarousel = () => {
         }}
         drag="x"
         dragConstraints={{
-          left: -(cards.length * cardWidth - 1400), // Adjust the total width of all cards
+          left: -(cards.length * cardWidth - 1200), // Adjust the total width of all cards
           right: 0,
         }}
         dragElastic={0.5}

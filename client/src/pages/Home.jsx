@@ -9,8 +9,8 @@ import HomeImage4 from "../assets/HomeImage4.png";
 import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
-import { AiOutlineCheck } from "react-icons/ai";
-import { FaWhatsappSquare } from "react-icons/fa";
+import chechmark from "../assets/CheckMark.png"
+import { BiLogoWhatsappSquare } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 import VerticalScroll from "../components/VerticalScroll";
@@ -21,22 +21,19 @@ const Home = (props) => {
   return (
     <div>
       <a href="https://wa.me/9928088430">
-        <FaWhatsappSquare
-          fontSize={48}
-          className="bottom-5 right-5 fixed text-green-500"
-        />
+
       </a>
       <section className="w-1172 h-642 font-inter mt-20  groupbgHomeSection">
         <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
-          <div className="ml-6">Free, Personalized Online</div>
-          <div className="-mt-4">Physiotherapy Health Care</div>
+          <div className="ml-20">Free, Personalized Online</div>
+          <div className="-mt-4 ml-16">Physiotherapy Health Care</div>
         </div>
         <div className="w-[1041px] font-normal text-zinc-500 text-[18px] mt-12 mx-auto">
-          <div>
+          <div className="ml-10">
             Start improving phsyical health and well being today. Let PhysioPlus
             shows you how. Building Power to Build A Physically
           </div>
-          <div className="ml-64">
+          <div className="ml-80">
             Healthy World : Supporting Sportsman carrer growth
           </div>
         </div>
@@ -178,10 +175,10 @@ const Home = (props) => {
           Explore the physioplus centres near you
         </div>
       </section>
-      <section className="font-inter">
-        <div className="mt-32 ml-[67px]">
+      <section className="font-inter w-[1280px] mx-auto">
+        <div className="mt-32 ml-12">
           <p className="text-[18px] font-semibold text-green-700 ml-1">
-            Services
+            Service
           </p>
           <div>
             <p className="w-[765px] h-[61px] text-[38px] font-semibold">
@@ -212,7 +209,7 @@ const Home = (props) => {
                 className="w-[315px] h-[179px] rounded-lg mx-5"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
               Schedule a Treatment
             </button>
           </div>
@@ -235,7 +232,7 @@ const Home = (props) => {
                 className="w-[315px] h-[179px] mx-5"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
               Schedule a Treatment
             </button>
           </div>
@@ -262,7 +259,7 @@ const Home = (props) => {
                 className="w-[315px] h-[179px] mx-5 rounded-lg"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
               Schedule a Treatment
             </button>
           </div>
@@ -277,16 +274,23 @@ const Home = (props) => {
       <section className="mt-10">
         <CardCarousel />
       </section>
+<<<<<<< main
       <section className="mt-24">
         <VerticalScroll />
       </section>
       <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
+=======
+      <section className="mt-24">
+        <VerticalScroll />
+      </section>
+      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
+>>>>>>> main
         <div>
           <div className="w-[558px] h-[108px] -mt-40">
             <p className="text-[45px] font-bold ">Strength Physical Health</p>
             <p className="text-[45px] font-bold -mt-3">and Wellness</p>
           </div>
-          <p className="w-[573px] h-[120px] text-[20px] font-normal  text-zinc-500 mt-12">
+          <p className="w-[573px] h-[120px] text-[20px] font-normal  text-zinc-500 mt-10">
             Discover the pinnacle of physical health and wellness with our
             expertly crafted strength programs. Our tailored approach and
             certified professionals will guide you towards your fitness goals,
@@ -294,31 +298,27 @@ const Home = (props) => {
             strength, elevate your life.
           </p>
 
-          <div className="relative flex mt-16 ml-10">
-            <div className="w-6 h-6 rounded-[50%] bg-green-800"></div>
-            <AiOutlineCheck className="absolute text-white text-[18px] font-semibold mt-1 ml-1" />
-            <p className="text-[23px] ml-4 -mt-1 font-medium ">
+          <div className="flex mt-20">
+            <img src={chechmark} alt="checkmark" className="w-6 h-6"/>
+            <p className="text-[23px] ml-3 -mt-1.5 font-medium">
               Guidance you can trust
             </p>
           </div>
-          <div className="relative flex mt-2 ml-10">
-            <div className="w-6 h-6 rounded-[50%] bg-green-800"></div>
-            <AiOutlineCheck className="absolute text-white text-[18px] font-semibold mt-1 ml-1" />
-            <p className="text-[23px] ml-4 -mt-1 font-medium ">
+          <div className="flex mt-2">
+            <img src={chechmark} alt="checkmark" className="w-6 h-6"/>
+            <p className="text-[23px] ml-3 -mt-1.5 font-medium ">
               Skill for life success
             </p>
           </div>
-          <div className="relative flex mt-2 ml-10">
-            <div className="w-6 h-6 rounded-[50%] bg-green-800"></div>
-            <AiOutlineCheck className="absolute text-white text-[18px] font-semibold mt-1 ml-1" />
-            <p className="text-[23px] ml-4 -mt-1 font-medium ">
+          <div className="flex mt-2">
+            <img src={chechmark} alt="checkmark" className="w-6 h-6"/>
+            <p className="text-[23px] ml-3 -mt-1.5 font-medium ">
               Strategies to stay fit
             </p>
           </div>
-          <div className="relative flex mt-2 ml-10">
-            <div className="w-6 h-6 rounded-[50%] bg-green-800"></div>
-            <AiOutlineCheck className="absolute text-white text-[18px] font-semibold mt-1 ml-1" />
-            <p className="text-[23px] ml-4 -mt-1 font-medium ">
+          <div className="flex mt-2">
+            <img src={chechmark} alt="checkmark" className="w-6 h-6"/>
+            <p className="text-[23px] ml-3 -mt-1.5 font-medium ">
               Strategies to stay fit
             </p>
           </div>
@@ -328,7 +328,7 @@ const Home = (props) => {
               onClick={() => {
                 setIsLoginClicked(true);
               }}
-              className="text-white  border w-[227px] h-[54px] text-xl font-semibold bg-green-700 rounded-[10px] mt-16 ml-10 shadow-md"
+              className="text-white  border w-[227px] h-[54px] text-xl font-semibold bg-green-700 rounded-[10px] mt-20 shadow-md"
             >
               Login For FREE
             </button>
@@ -338,18 +338,18 @@ const Home = (props) => {
           src={HomeImage}
           alt="home"
           loading="lazy"
-          className="w-[476px] h-[476px] rounded-2xl shadow-[rgb(239,245,255)_40px_-35px_1px_10px]"
+          className="w-[476px] h-[476px] rounded-2xl shadow-[rgb(239,245,255)_24px_-21px_1px_0px]"
         />
       </section>
-      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-60 font-inter">
+      <section className="w-[1280px] flex justify-evenly mx-auto space-x-16 mb-20 mt-40 font-inter">
         <img
           src={HomeImage2}
           alt="home"
           loading="lazy"
-          className="w-[476px]h-[476px] rounded-2xl shadow-[rgb(239,255,255)_-42px_-29px_1px_10px]"
+          className="w-[476px]h-[476px] rounded-2xl shadow-[rgb(239,255,255)_-24px_-21px_1px_0px]"
         />
         <div>
-          <div className="w-[528px] text-[45px] -mt-40">
+          <div className="w-[528px] text-[45px] -mt-20">
             <p className="font-bold">Reasons to choose</p>
             <p className="text-[45px] font-bold -mt-4">Physio Plus</p>
           </div>
@@ -358,22 +358,22 @@ const Home = (props) => {
             who prioritize your well-being, ensuring your path to recovery is
             smooth and effective
           </p>
-          <div className="flex mt-10 ml-8">
+          <div className="flex mt-16">
             <img
               src={HomeImage3}
               alt="home"
               loading="lazy"
               className="w-[46px] h-[226.035px]"
             />
-            <div className=" text-[23px] font-semibold space-y-7 ml-1">
-              <p>Value for money</p>
-              <p>Qualified therapists</p>
-              <p>Personalised treatment plan</p>
-              <p>Convenient</p>
+            <div className=" text-[23px] font-medium">
+              <p className="">Value for money</p>
+              <p className="mt-6">Qualified therapists</p>
+              <p className="mt-7">Personalised treatment plan</p>
+              <p className="mt-[27px]">Convenient</p>
             </div>
           </div>
           <Link to="#">
-            <button className="text-green-500  border w-[221px] text-[23px] font-bold bg-white rounded-[10px] mt-16 ml-10 shadow-lg px-2 py-1 hover:scale-105 transition-all 3s ease">
+            <button className="text-green-500  border w-[221px] text-[23px] font-bold bg-white rounded-[10px] mt-16 shadow-lg px-2 py-1">
               Get Started
             </button>
           </Link>
@@ -475,7 +475,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="flex justify-evenly mt-5">
+      <section className="w-[1280px] flex justify-around space-x-40 mx-auto mt-20">
         <div>
           <p className="w-[519px] h-[111px] text-[35px] font-semibold mt-20">
             Unleash Extraordinary Possibilities with Our App!

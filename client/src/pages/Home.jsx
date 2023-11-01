@@ -10,7 +10,7 @@ import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
 import chechmark from "../assets/CheckMark.png"
-import { RiWhatsappFill } from "react-icons/ri";
+import { BiLogoWhatsappSquare } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 
@@ -20,7 +20,7 @@ const Home = (props) => {
   return (
     <div>
       <a href="https://wa.me/9928088430">
-        <RiWhatsappFill fontSize={48}  className="bottom-5 right-5 fixed text-green-500"/>
+        <BiLogoWhatsappSquare fontSize={48}  className="bottom-5 right-5 fixed text-green-500"/>
       </a>
       <section className="w-1172 h-642 font-inter mt-20  groupbgHomeSection">
         <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
@@ -174,10 +174,10 @@ const Home = (props) => {
           Explore the physioplus centres near you
         </div>
       </section>
-      <section className="font-inter">
-        <div className="mt-32 ml-[67px]">
+      <section className="font-inter w-[1280px] mx-auto">
+        <div className="mt-32 ml-12">
           <p className="text-[18px] font-semibold text-green-700 ml-1">
-            Services
+            Service
           </p>
           <div>
             <p className="w-[765px] h-[61px] text-[38px] font-semibold">
@@ -208,7 +208,7 @@ const Home = (props) => {
                 className="w-[315px] h-[179px] rounded-lg mx-5"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
               Schedule a Treatment
             </button>
           </div>
@@ -231,7 +231,7 @@ const Home = (props) => {
                 className="w-[315px] h-[179px] mx-5"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
               Schedule a Treatment
             </button>
           </div>
@@ -258,7 +258,7 @@ const Home = (props) => {
                 className="w-[315px] h-[179px] mx-5 rounded-lg"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
               Schedule a Treatment
             </button>
           </div>
@@ -274,7 +274,7 @@ const Home = (props) => {
         <CardCarousel />
       </section>
       <section className="mt-24"></section>
-      <section className="flex justify-around items-center mb-20 mt-52 font-inter">
+      <section className="w-[1280px] flex justify-evenly items-center mb-20 mt-52 font-inter">
         <div>
           <div className="w-[558px] h-[108px] -mt-40">
             <p className="text-[45px] font-bold ">Strength Physical Health</p>
@@ -331,12 +331,12 @@ const Home = (props) => {
           className="w-[476px] h-[476px] rounded-2xl shadow-[rgb(239,245,255)_24px_-21px_1px_0px]"
         />
       </section>
-      <section className="flex justify-around mx-auto mb-20 mt-40 font-inter">
+      <section className="w-[1280px] flex justify-evenly mx-auto space-x-16 mb-20 mt-40 font-inter">
         <img
           src={HomeImage2}
           alt="home"
           loading="lazy"
-          className="w-[426px]h-[426px] rounded-2xl shadow-[rgb(239,255,255)_-24px_-21px_1px_0px]"
+          className="w-[476px]h-[476px] rounded-2xl shadow-[rgb(239,255,255)_-24px_-21px_1px_0px]"
         />
         <div>
           <div className="w-[528px] text-[45px] -mt-20">
@@ -465,7 +465,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="flex justify-evenly mt-20">
+      <section className="w-[1280px] flex justify-around space-x-40 mx-auto mt-20">
         <div>
           <p className="w-[519px] h-[111px] text-[35px] font-semibold mt-20">
             Unleash Extraordinary Possibilities with Our App!

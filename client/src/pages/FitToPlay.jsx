@@ -1,4 +1,5 @@
 import CardCarousel from "../components/Carousel";
+import TestimonialCarousel from "../components/Testimonial";
 
 const FitToplay = () => {
   return (
@@ -159,6 +160,14 @@ const FitToplay = () => {
           </div>
         </div>
       </section>
+      <section className="mt-20">
+        <div className="w-[223px] mx-auto">
+          <p className="text-3xl font-semibold">Testimonials</p>
+        </div>
+        <div>
+          <TestimonialCarousel />
+        </div>
+      </section>
       <section className="flex justify-evenly items-center w-[1261px] h-[212px] mx-auto mt-24 bg-zinc-50">
         <div>
           <p className="text-[26px] font-medium">
@@ -177,7 +186,7 @@ const FitToplay = () => {
           </button>
         </div>
       </section>
-      <section className="flex justify-evenly items-center w-[1261px] h-[170px] mx-auto mt-14 bg-zinc-50">
+      <section className="w-full flex justify-evenly items-center h-[170px] mx-auto mt-20 -mb-20 bg-zinc-50">
         <div>
           <p className="text-[26px] font-medium">
             Have Questions or Need Assistance?
@@ -188,10 +197,10 @@ const FitToplay = () => {
         </div>
         <div>
           <input
-          required
-          name="email"
-          placeholder="Enter your Email"
-          className="w-[216px] h-[40px] border border-slate-500 outline-none bg-transparent text-sm font-medium pl-2 rounded-md"
+            required
+            name="email"
+            placeholder="Enter your Email"
+            className="w-[216px] h-[40px] border border-slate-500 outline-none bg-transparent text-sm font-medium pl-2 rounded-md"
           />
           <button className="text-zinc-100 border w-[88px] h-[40px] text-sm font-semibold bg-green-500 rounded-md shadow-lg ml-7">
             Send

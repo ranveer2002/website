@@ -274,17 +274,10 @@ const Home = (props) => {
       <section className="mt-10">
         <CardCarousel />
       </section>
-<<<<<<< main
       <section className="mt-24">
         <VerticalScroll />
       </section>
       <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
-=======
-      <section className="mt-24">
-        <VerticalScroll />
-      </section>
-      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
->>>>>>> main
         <div>
           <div className="w-[558px] h-[108px] -mt-40">
             <p className="text-[45px] font-bold ">Strength Physical Health</p>

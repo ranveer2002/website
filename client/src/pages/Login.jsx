@@ -23,7 +23,10 @@ const Login = (props) => {
       <div className="w-[500px] h-full border bg-white">
         <div className="w-[450px] h-[600px] ml-10">
           <div className="flex items-center justify-center w-6 h-6 mt-5 -ml-6 text-green-700 rounded-full cursor-pointer hover:bg-green-700 hover:text-white">
-            <div onClick={() => navigate(-1)}>
+            <div onClick={() => {
+              setIsLoginClicked(false);
+              navigate(-1);
+            }}>
               <IoIosArrowBack size={18} />
             </div>
           </div>

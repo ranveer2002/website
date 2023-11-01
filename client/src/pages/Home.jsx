@@ -10,6 +10,7 @@ import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
 import { AiOutlineCheck } from "react-icons/ai";
+import { FaWhatsappSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 
@@ -18,10 +19,11 @@ const Home = (props) => {
 
   return (
     <div>
+      <a href="https://wa.me/9928088430">
+        <FaWhatsappSquare fontSize={48} className="bottom-5 right-5 fixed text-green-500"/>
+      </a>
       <section className="w-1172 h-642 font-inter mt-20  groupbgHomeSection">
-        <div
-          className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20"
-        >
+        <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
           <div className="ml-6">Free, Personalized Online</div>
           <div className="-mt-4">Physiotherapy Health Care</div>
         </div>
@@ -155,9 +157,28 @@ const Home = (props) => {
           </button>
         </div>
       </section>
+      <section className="font-inter self-stretch flex w-full items-start mt-24 justify-between gap-5 px-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
+        <div className="text-black text-center text-xl font-semibold max-w-[491px] self-stretch grow shrink-0 basis-auto max-md:max-w-full">
+          Subscribe now with the exciitng offer at just 99{" "}
+        </div>
+        <div className="text-black text-center text-xl font-semibold self-center my-auto">
+          •
+        </div>
+        <div className="text-black text-center text-xl font-semibold max-w-[434px] self-stretch grow shrink-0 basis-auto">
+          Explore the beauty of health with our blog
+        </div>
+        <div className="text-black text-center text-xl font-semibold self-center my-auto">
+          •
+        </div>
+        <div className="text-black text-center text-xl font-semibold max-w-[416px] self-stretch grow shrink-0 basis-auto">
+          Explore the physioplus centres near you
+        </div>
+      </section>
       <section className="font-inter">
-        <div className="mt-16 ml-[67px]">
-          <p className="text-[18px] font-semibold text-green-700 ml-1">Services</p>
+        <div className="mt-32 ml-[67px]">
+          <p className="text-[18px] font-semibold text-green-700 ml-1">
+            Services
+          </p>
           <div>
             <p className="w-[765px] h-[61px] text-[38px] font-semibold">
               Exceptional Services You Can Rely On
@@ -243,18 +264,20 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="m-5">
+      <section className="mt-32 mb-10">
+        <div className="text-black text-4xl font-semibold ml-10 max-md:max-w-full">
+          Irresistible Offers Awaits You..
+        </div>
         <Slider />
       </section>
-      <section>
+      <section className="mt-10">
         <CardCarousel />
       </section>
+      <section className="mt-24"></section>
       <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
         <div>
           <div className="w-[558px] h-[108px] -mt-40">
-            <p className="text-[45px] font-bold ">
-             Strength Physical Health
-            </p>
+            <p className="text-[45px] font-bold ">Strength Physical Health</p>
             <p className="text-[45px] font-bold -mt-3">and Wellness</p>
           </div>
           <p className="w-[573px] h-[120px] text-[20px] font-normal  text-zinc-500 mt-12">
@@ -321,10 +344,8 @@ const Home = (props) => {
         />
         <div>
           <div className="w-[528px] text-[45px] -mt-40">
-          <p className="font-bold">
-            Reasons to choose
-          </p>
-          <p className="text-[45px] font-bold -mt-4">Physio Plus</p>
+            <p className="font-bold">Reasons to choose</p>
+            <p className="text-[45px] font-bold -mt-4">Physio Plus</p>
           </div>
           <p className="w-[538px] text-[20px] font-normal  text-zinc-500 mt-6">
             Choose PhysioPlus for personalized care and expert physiotherapists
@@ -355,14 +376,14 @@ const Home = (props) => {
 
       <section>
         <div className="flex flex-col px-5 bg-zinc-50">
-          <div className="self-center mt-20 text-5xl font-bold text-black whitespace-nowrap max-md:max-w-full max-md:text-4xl max-md:mt-10">
+          <div className="self-center mt-20 mb-8 text-5xl font-bold text-black whitespace-nowrap max-md:max-w-full max-md:text-4xl max-md:mt-10">
             Popular news and blogs
           </div>
           <div className="text-zinc-500 text-center text-xl self-center max-w-[694px] mt-9 max-md:max-w-full">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut lLorem ipsum dolor sit{" "}
           </div>
-          <div className="self-center w-full max-w-[1116px] mt-28 mb-44 max-md:max-w-full max-md:my-10">
+          <div className="self-center w-full max-w-[1116px] mt-28 mb-[85px] max-md:max-w-full max-md:my-10">
             <div className="flex gap-5 max-md:flex-col max-md:items-stretch max-md:gap-0">
               <div className="flex flex-col items-stretch w-[34%] max-md:w-full max-md:ml-0">
                 <div className="flex flex-col grow max-md:mt-10">
@@ -448,8 +469,8 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="flex justify-evenly mt-10">
-        <div className="">
+      <section className="flex justify-evenly mt-5">
+        <div>
           <p className="w-[519px] h-[111px] text-[35px] font-semibold mt-20">
             Unleash Extraordinary Possibilities with Our App!
           </p>
@@ -500,7 +521,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="mt-20">
+      <section className="mt-28">
         <div className="flex flex-col">
           <div className="bg-gray-50 self-center flex w-full max-w-[1400px] flex-col px-5 py-11 rounded-2xl max-md:max-w-full">
             <div className="self-center flex w-[617px] max-w-full flex-col">
@@ -512,15 +533,20 @@ const Home = (props) => {
                 assist.
               </div>
               <div className="self-center flex w-[572px] max-w-full items-start justify-between gap-5 ml-2.5 mt-11 max-md:flex-wrap max-md:mt-10">
-                <form className="text-zinc-500 text-base font-medium self-stretch w-[300px] max-w-full grow basis-auto pl-4 pr-5 py-4 rounded-md border-[0.5px] border-solid border-black">
-                  Enter your email
+                <form>
+                  <input
+                    className="text-zinc-500 text-base font-medium self-stretch w-[400px] max-w-full grow basis-auto pl-4 pr-5 py-4 rounded-md border-[0.5px] border-solid border-black"
+                    type="text"
+                  ></input>
                 </form>
                 <button className="bg-green-500 font-semibold text-zinc-100 mt-1 flex items-center justify-center w-[142px] max-w-full flex-col px-3 py-3 rounded-md hover:shadow-md">
                   Send
                 </button>
               </div>
               <div className="text-black text-center text-xs font-light underline ml-24 mt-2.5 self-start whitespace-nowrap max-md:ml-2.5">
-                We care about your data in our privacy policy.
+                <a href="/" className="hover:cursor-pointer">
+                  We care about your data in our privacy policy.
+                </a>
               </div>
             </div>
           </div>

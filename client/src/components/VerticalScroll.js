@@ -1,22 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./VerticalScroll.module.css";
 import Slideimg from "./sliderasset/Home Image.png";
-
 import Scroll from "react-scroll";
+
 const Element = Scroll.Element;
 const scroller = Scroll.scroller;
+const events = Scroll.Events;
 
 const VerticalScroll = () => {
   const [activeSection, setActiveSection] = useState(0);
+  const contentRef = useRef(null);
 
   const handleScrollTo = (section) => {
-    setActiveSection(section);
     scroller.scrollTo(`section-${section}`, {
       duration: 800,
       delay: 0,
       smooth: "easeInOutQuart",
+      containerId: "scrollContainer",
     });
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offsetTop = contentRef.current.scrollTop;
+      const sectionHeight = (65 * window.innerHeight) / 100;
+      const currentSection = Math.floor(offsetTop / sectionHeight);
+      setActiveSection(currentSection);
+    };
+
+    contentRef.current.addEventListener("scroll", handleScroll);
+
+    return () => {
+      contentRef.current.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -62,7 +79,7 @@ const VerticalScroll = () => {
           </p>
         </div>
       </div>
-      <div className={styles.content}>
+      <div ref={contentRef} id="scrollContainer" className={styles.content}>
         <Element name="section-0" className={styles.section}>
           <img src={Slideimg} alt="homeimg" />{" "}
         </Element>
@@ -81,3 +98,5 @@ const VerticalScroll = () => {
 };
 
 export default VerticalScroll;
+
+// CSS stays the same

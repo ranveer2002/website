@@ -9,19 +9,23 @@ import HomeImage4 from "../assets/HomeImage4.png";
 import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
-import chechmark from "../assets/CheckMark.png"
+import chechmark from "../assets/CheckMark.png";
 import { BiLogoWhatsappSquare } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 import VerticalScroll from "../components/VerticalScroll";
-
+// import Slidein from "../components/Slidein";
 const Home = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
 
   return (
     <div>
       <a href="https://wa.me/9928088430">
-
+        <BiLogoWhatsappSquare
+          fontSize={48}
+          fill="green"
+          className="fixed bottom-3 right-3"
+        />
       </a>
       <section className="w-1172 h-642 font-inter mt-20  groupbgHomeSection">
         <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
@@ -158,23 +162,7 @@ const Home = (props) => {
           </button>
         </div>
       </section>
-      <section className="font-inter self-stretch flex w-full items-start mt-24 justify-between gap-5 px-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
-        <div className="text-black text-center text-xl font-semibold max-w-[491px] self-stretch grow shrink-0 basis-auto max-md:max-w-full">
-          Subscribe now with the exciitng offer at just 99{" "}
-        </div>
-        <div className="text-black text-center text-xl font-semibold self-center my-auto">
-          •
-        </div>
-        <div className="text-black text-center text-xl font-semibold max-w-[434px] self-stretch grow shrink-0 basis-auto">
-          Explore the beauty of health with our blog
-        </div>
-        <div className="text-black text-center text-xl font-semibold self-center my-auto">
-          •
-        </div>
-        <div className="text-black text-center text-xl font-semibold max-w-[416px] self-stretch grow shrink-0 basis-auto">
-          Explore the physioplus centres near you
-        </div>
-      </section>
+      <section>{/* <Slidein /> */}</section>
       <section className="font-inter w-[1280px] mx-auto">
         <div className="mt-32 ml-12">
           <p className="text-[18px] font-semibold text-green-700 ml-1">
@@ -274,17 +262,10 @@ const Home = (props) => {
       <section className="mt-10">
         <CardCarousel />
       </section>
-<<<<<<< main
       <section className="mt-24">
         <VerticalScroll />
       </section>
       <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
-=======
-      <section className="mt-24">
-        <VerticalScroll />
-      </section>
-      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
->>>>>>> main
         <div>
           <div className="w-[558px] h-[108px] -mt-40">
             <p className="text-[45px] font-bold ">Strength Physical Health</p>
@@ -299,25 +280,25 @@ const Home = (props) => {
           </p>
 
           <div className="flex mt-20">
-            <img src={chechmark} alt="checkmark" className="w-6 h-6"/>
+            <img src={chechmark} alt="checkmark" className="w-6 h-6" />
             <p className="text-[23px] ml-3 -mt-1.5 font-medium">
               Guidance you can trust
             </p>
           </div>
           <div className="flex mt-2">
-            <img src={chechmark} alt="checkmark" className="w-6 h-6"/>
+            <img src={chechmark} alt="checkmark" className="w-6 h-6" />
             <p className="text-[23px] ml-3 -mt-1.5 font-medium ">
               Skill for life success
             </p>
           </div>
           <div className="flex mt-2">
-            <img src={chechmark} alt="checkmark" className="w-6 h-6"/>
+            <img src={chechmark} alt="checkmark" className="w-6 h-6" />
             <p className="text-[23px] ml-3 -mt-1.5 font-medium ">
               Strategies to stay fit
             </p>
           </div>
           <div className="flex mt-2">
-            <img src={chechmark} alt="checkmark" className="w-6 h-6"/>
+            <img src={chechmark} alt="checkmark" className="w-6 h-6" />
             <p className="text-[23px] ml-3 -mt-1.5 font-medium ">
               Strategies to stay fit
             </p>
@@ -400,7 +381,7 @@ const Home = (props) => {
                     className="self-start object-cover object-center w-full overflow-hidden aspect-square"
                   />
                   <div className="flex w-[346px] max-w-full items-start gap-5 ml-3 mt-3 max-md:ml-2.5">
-                    <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5">
+                    <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5 hover:cursor-pointer">
                       Vidhan Solanki • 3days Ago
                     </div>
                     <div className="text-black text-center text-base bg-emerald-400 bg-opacity-50 w-[60px] max-w-full pl-3 pr-3.5 py-1 rounded self-start">
@@ -425,7 +406,7 @@ const Home = (props) => {
                     className="self-start object-cover object-center w-full overflow-hidden aspect-square"
                   />
                   <div className="flex w-[346px] max-w-full items-start gap-5 ml-3 mt-3 self-start max-md:ml-2.5">
-                    <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5 self-start">
+                    <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5 self-start hover:cursor-pointer">
                       Vidhan Solanki • 3days Ago
                     </div>
                     <div className="text-black text-center text-base bg-emerald-400 bg-opacity-50 w-[59px] max-w-full pl-3 pr-3.5 py-1 rounded self-start">
@@ -450,7 +431,7 @@ const Home = (props) => {
                     className="self-start object-cover object-center w-full overflow-hidden aspect-square"
                   />
                   <div className="flex w-[346px] max-w-full items-start gap-5 ml-3 mt-3 self-start max-md:ml-2.5">
-                    <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5 self-start">
+                    <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5 self-start hover:cursor-pointer">
                       Vidhan Solanki • 3days Ago
                     </div>
                     <div className="text-black text-center text-base bg-emerald-400 bg-opacity-50 w-[62px] max-w-full pl-3 pr-3.5 py-1 rounded self-start">

@@ -3,7 +3,7 @@ import TestimonialCarousel from "../components/Testimonial";
 
 const FitToplay = () => {
   return (
-    <div className="font-inter">
+    <div className="mx-auto font-inter">
       <section className="mt-28 flex flex-col items-center">
         <p className="text-3xl font-semibold text-black">
           An Assessment for Budding Athletes
@@ -23,7 +23,7 @@ const FitToplay = () => {
       <div className="mt-24">
         <CardCarousel />
       </div>
-      <section className="w-[1278px] h-[379px] mx-auto groupfittoplaybg">
+      <section className="w-[1200px] h-[379px] mx-auto groupfittoplaybg">
         <div className="mt-20">
           <p className="w-[223px] text-3xl font-semibold mx-auto pt-12">
             What we offer
@@ -168,7 +168,7 @@ const FitToplay = () => {
           <TestimonialCarousel />
         </div>
       </section>
-      <section className="flex justify-evenly items-center w-[1261px] h-[212px] mx-auto mt-24 bg-zinc-50">
+      <section className="w-[1200px] flex justify-evenly items-center h-[212px] mx-auto mt-24 bg-zinc-50">
         <div>
           <p className="text-[26px] font-medium">
             Register Now and Begin Your Assessment Today!
@@ -186,7 +186,7 @@ const FitToplay = () => {
           </button>
         </div>
       </section>
-      <section className="w-full flex justify-evenly items-center h-[170px] mx-auto mt-20 -mb-20 bg-zinc-50">
+      <section className="w-full flex justify-evenly items-center h-[170px] mt-20 -mb-20 bg-zinc-50">
         <div>
           <p className="text-[26px] font-medium">
             Have Questions or Need Assistance?

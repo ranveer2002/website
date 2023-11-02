@@ -19,7 +19,7 @@ const Login = (props) => {
     navigate("/");
   };
   return (
-    <div className="w-100vw h-[660px] group-loginbg-color font-helvetica">
+    <div className="w-100vw h-[650px] group-loginbg-color font-inter">
       <div className="w-[500px] h-full border bg-white">
         <div className="w-[450px] h-[600px] ml-10">
           <div className="flex items-center justify-center w-6 h-6 mt-5 -ml-6 text-green-700 rounded-full cursor-pointer hover:bg-green-700 hover:text-white">

@@ -41,7 +41,7 @@ const TestimonialCarousel = () => {
   return (
     <div
       className="relative overflow-hidden w-full justify-evenly mx-auto cursor-grab"
-      style={{ width: "1280px" }}
+      style={{ width: "1200px" }}
     >
       <motion.div
         className="flex"
@@ -50,7 +50,7 @@ const TestimonialCarousel = () => {
         }}
         drag="x"
         dragConstraints={{
-          left: -(Testimonials.length * cardWidth - 1280), // Adjust the total width of all cards
+          left: -(Testimonials.length * cardWidth - 1200), // Adjust the total width of all cards
           right: 0,
         }}
         dragElastic={0.5}

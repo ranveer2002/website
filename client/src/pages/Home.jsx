@@ -14,6 +14,7 @@ import { BiLogoWhatsappSquare } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 import VerticalScroll from "../components/VerticalScroll";
+import SearchBar from "../components/SearchBar";
 const Home = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
 

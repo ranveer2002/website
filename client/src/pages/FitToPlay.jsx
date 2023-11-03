@@ -1,5 +1,6 @@
-import CardCarousel from "../components/Carousel";
+import ImageCarousel from "../components/ImageCarousel";
 import TestimonialCarousel from "../components/Testimonial";
+import VerticalScrollFitToplay from "../components/VerticalScrollFitToplay";
 
 const FitToplay = () => {
   return (
@@ -20,11 +21,14 @@ const FitToplay = () => {
           Get Started
         </button>
       </section>
-      <div className="mt-24">
-        <CardCarousel />
-      </div>
+      <section className="mt-20">
+        <ImageCarousel/>
+      </section>
+      <section className="mt-20">
+        <VerticalScrollFitToplay/>
+      </section>
       <section className="w-[1200px] h-[379px] mx-auto groupfittoplaybg">
-        <div className="mt-20">
+        <div className="mt-16">
           <p className="w-[223px] text-3xl font-semibold mx-auto pt-12">
             What we offer
           </p>

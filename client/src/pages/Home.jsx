@@ -15,19 +15,23 @@ import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 import VerticalScroll from "../components/VerticalScroll";
 import SearchBar from "../components/SearchBar";
+import Slidein from "../components/Slidein";
 const Home = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
 
   return (
     <div>
       <a href="https://wa.me/9928088430">
-            <BiLogoWhatsappSquare fontSize={48} fill="green" className="fixed bottom-3 right-3"/>
-
+        <BiLogoWhatsappSquare
+          fontSize={48}
+          fill="green"
+          className="fixed bottom-3 right-3"
+        />
       </a>
-      <section className="font-inter mt-20  groupbgHomeSection">
+      <section className="mt-20 font-inter groupbgHomeSection">
         <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
           <div className="ml-20">Free, Personalized Online</div>
-          <div className="-mt-4 ml-16">Physiotherapy Health Care</div>
+          <div className="ml-16 -mt-4">Physiotherapy Health Care</div>
         </div>
         <div className="w-[1041px] font-normal text-zinc-500 text-[18px] mt-12 mx-auto">
           <div className="ml-10">
@@ -39,10 +43,12 @@ const Home = (props) => {
           </div>
         </div>
         <div className="mt-16">
-          <SearchBar/>
+          <SearchBar />
         </div>
       </section>
-      <section>{/* <Slidein /> */}</section>
+      <section>
+        <Slidein />
+      </section>
       <section className="font-inter w-[1280px] mx-auto">
         <div className="mt-32 ml-12">
           <p className="text-[18px] font-semibold text-green-700 ml-1">
@@ -52,7 +58,7 @@ const Home = (props) => {
             <p className="w-[765px] h-[61px] text-[38px] font-semibold">
               Exceptional Services You Can Rely On
             </p>
-            <p className="text-slate-500 ml-1">
+            <p className="ml-1 text-slate-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               veniam{" "}
             </p>
@@ -61,7 +67,7 @@ const Home = (props) => {
         <div className="flex items-center justify-evenly mt-7">
           <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
             <div className="w-[287px] h-[78px] mt-9 mx-auto">
-              <p className="text-3xl font-bold ml-3">Clinical Treatment</p>
+              <p className="ml-3 text-3xl font-bold">Clinical Treatment</p>
               <p className="text-3xl font-bold ml-9">Physiotherapy</p>
             </div>
             <div className="w-[293px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
@@ -84,8 +90,8 @@ const Home = (props) => {
 
           <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
             <div className="w-[293px] h-[78px] mt-9 mx-auto">
-              <p className="text-3xl font-bold ml-3">Physio Home Visits</p>
-              <p className="text-3xl font-bold ml-16">Availability</p>
+              <p className="ml-3 text-3xl font-bold">Physio Home Visits</p>
+              <p className="ml-16 text-3xl font-bold">Availability</p>
             </div>
             <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
               <p className="ml-9">Home Visits by certified By PhysioPlus</p>
@@ -107,7 +113,7 @@ const Home = (props) => {
 
           <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
             <div className="w-[218px] h-[78px] mt-9 mx-auto">
-              <p className="text-3xl font-bold ml-1">Expert Online</p>
+              <p className="ml-1 text-3xl font-bold">Expert Online</p>
               <p className="text-3xl font-bold">Physiotherapy</p>
             </div>
             <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
@@ -134,7 +140,7 @@ const Home = (props) => {
         </div>
       </section>
       <section className="mt-32 mb-10">
-        <div className="text-black text-4xl font-semibold ml-32 max-md:max-w-full">
+        <div className="ml-32 text-4xl font-semibold text-black max-md:max-w-full">
           Irresistible Offers Awaits You..
         </div>
         <Slider />

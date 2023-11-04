@@ -31,7 +31,9 @@ const VerticalScroll = () => {
     contentRef.current.addEventListener("scroll", handleScroll);
 
     return () => {
-      contentRef.current.removeEventListener("scroll", handleScroll);
+      if (contentRef.current) {
+        contentRef.current.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
 

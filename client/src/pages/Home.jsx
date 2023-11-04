@@ -1,6 +1,6 @@
-import i2 from "../assets/image1.jpeg";
-import i3 from "../assets/image2.jpeg";
-import i1 from "../assets/image3.jpeg";
+import i1 from "../assets/image1.png";
+import i2 from "../assets/image2.png";
+import i3 from "../assets/image3.png";
 import Slider from "../components/Slider";
 import HomeImage from "../assets/HomeImage.png";
 import HomeImage2 from "../assets/HomeImage2.png";
@@ -19,18 +19,18 @@ const Home = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
 
   return (
-    <div>
+    <div className="">
       <a href="https://wa.me/9928088430">
             <BiLogoWhatsappSquare fontSize={48} fill="green" className="fixed bottom-3 right-3"/>
 
       </a>
-      <section className="font-inter mt-20  groupbgHomeSection">
-        <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
-          <div className="ml-20">Free, Personalized Online</div>
-          <div className="-mt-4 ml-16">Physiotherapy Health Care</div>
+      <section className="w-full font-inter  groupbgHomeSection">
+        <div className=" w-[829px] h-[140px] font-bold text-black text-[52px] mx-auto py-20">
+          <div className="ml-28">Free, Personalized Online</div>
+          <div className="-mt-4 ml-24">Physiotherapy Health Care</div>
         </div>
-        <div className="w-[1041px] font-normal text-zinc-500 text-[18px] mt-12 mx-auto">
-          <div className="ml-10">
+        <div className="w-[1041px] font-normal text-zinc-500 text-[16px] mt-20 mx-auto">
+          <div className="ml-14">
             Start improving phsyical health and well being today. Let PhysioPlus
             shows you how. Building Power to Build A Physically
           </div>
@@ -38,7 +38,7 @@ const Home = (props) => {
             Healthy World : Supporting Sportsman carrer growth
           </div>
         </div>
-        <div className="mt-16">
+        <div className="mt-16 pb-12">
           <SearchBar/>
         </div>
       </section>
@@ -92,12 +92,12 @@ const Home = (props) => {
               <p>Physiotherapists for Patients with mobility issues &</p>
               <p className="ml-10">for patients looking for convenience</p>
             </div>
-            <div className="mt-8 rounded-lg">
+            <div className="mt-8 ">
               <img
                 src={i2}
                 alt=""
                 loading="lazy"
-                className="w-[315px] h-[179px] mx-5"
+                className="w-[315px] h-[179px] rounded-lg mx-5"
               />
             </div>
             <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
@@ -145,7 +145,7 @@ const Home = (props) => {
       <section className="mt-24">
         <VerticalScroll />
       </section>
-      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
+      <section className="w-[1280px] flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
         <div>
           <div className="w-[558px] h-[108px] -mt-40">
             <p className="text-[45px] font-bold ">Strength Physical Health</p>
@@ -189,7 +189,7 @@ const Home = (props) => {
               onClick={() => {
                 setIsLoginClicked(true);
               }}
-              className="text-white  border w-[227px] h-[54px] text-xl font-semibold bg-green-700 rounded-[10px] mt-20 shadow-md"
+              className="text-white  border w-[227px] h-[54px] text-xl font-semibold bg-green-700 rounded-[10px] mt-20 shadow-lg"
             >
               Login For FREE
             </button>
@@ -207,7 +207,7 @@ const Home = (props) => {
           src={HomeImage2}
           alt="home"
           loading="lazy"
-          className="w-[476px]h-[476px] rounded-2xl shadow-[rgb(239,255,255)_-24px_-21px_1px_0px]"
+          className="w-[476px] h-[476px] mt-10 rounded-2xl shadow-[rgb(239,255,255)_-24px_-21px_1px_0px]"
         />
         <div>
           <div className="w-[528px] text-[45px] -mt-20">
@@ -219,12 +219,12 @@ const Home = (props) => {
             who prioritize your well-being, ensuring your path to recovery is
             smooth and effective
           </p>
-          <div className="flex mt-16">
+          <div className="flex mt-10">
             <img
               src={HomeImage3}
               alt="home"
               loading="lazy"
-              className="w-[46px] h-[226.035px]"
+              className="w-[46px] h-[226.035px] -ml-1.5"
             />
             <div className=" text-[23px] font-medium">
               <p className="">Value for money</p>
@@ -234,7 +234,7 @@ const Home = (props) => {
             </div>
           </div>
           <Link to="#">
-            <button className="text-green-500  border w-[221px] text-[23px] font-bold bg-white rounded-[10px] mt-16 shadow-lg px-2 py-1">
+            <button className="text-green-500  border w-[221px] text-[23px] font-bold bg-white rounded-[10px] mt-11 shadow-lg px-2 py-1">
               Get Started
             </button>
           </Link>
@@ -336,7 +336,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="w-[1280px] flex justify-around space-x-40 mx-auto mt-20">
+      <section className="w-[1280px] flex justify-around space-x-20 mx-auto mt-20">
         <div>
           <p className="w-[519px] h-[111px] text-[35px] font-semibold mt-20">
             Unleash Extraordinary Possibilities with Our App!
@@ -363,7 +363,7 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative -ml-10">
           <div>
             <img
               src={HomeImage4}

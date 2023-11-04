@@ -1,4 +1,10 @@
+import AboutUs from "../components/AboutUs";
+
 const Products = () => {
-  return <div>hii this page is of Products!</div>;
+  return (
+    <div>
+      <AboutUs />
+    </div>
+  );
 };
 export default Products;

@@ -140,7 +140,7 @@ const Home = (props) => {
         </div>
       </section>
       <section className="mt-32 mb-10">
-        <div className="ml-32 text-4xl font-semibold text-black max-md:max-w-full">
+        <div className="text-4xl font-semibold text-black ml-28 w-[765px]">
           Irresistible Offers Awaits You..
         </div>
         <Slider />

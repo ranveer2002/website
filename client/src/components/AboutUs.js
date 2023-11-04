@@ -1,10 +1,10 @@
 import React from "react";
-import aboutimg from "./components/sliderasset/about.png";
+import aboutimg from "./sliderasset/about.png";
 function AboutUs() {
   return (
-    <div className="flex flex-col bg-white">
-      <div className="flex flex-col self-stretch w-full mt-9 pl-14 pr-14 max-md:max-w-full max-md:px-5">
-        <div className="text-black text-center text-5xl font-semibold self-center max-w-[845px] mt-32 max-md:max-w-full max-md:text-4xl max-md:mt-10">
+    <div className="flex flex-col w-[1280px] mx-auto bg-white">
+      <div className="flex flex-col w-full max-md:px-5">
+        <div className="self-center text-5xl font-semibold text-center text-black mt-14 max-md:max-w-full max-md:text-4xl max-md:mt-10">
           Meet the Faces Fueling Your
           <br />
           Wellness at Physioplus
@@ -13,12 +13,12 @@ function AboutUs() {
           loading="lazy"
           srcSet={aboutimg}
           alt="aboutimg"
-          className="aspect-[1.32] object-contain object-center w-[516px] overflow-hidden self-center max-w-full mt-20 max-md:mt-10"
+          className="aspect-[1.32] object-contain object-center overflow-hidden self-center max-w-full mt-7 max-md:mt-10"
         />
-        <div className="text-black text-center text-xl whitespace-nowrap ml-28 mt-16 self-start max-md:ml-2.5 max-md:mt-10">
+        <div className="text-black text-center text-xl whitespace-nowrap  mt-16 self-start w-[425px]">
           Our story
         </div>
-        <div className="text-black text-3xl font-medium leading-10 max-w-[496px] ml-28 mt-1.5 self-start max-md:max-w-full">
+        <div className="text-black text-3xl font-medium ml-36 w-[496px] mt-1.5 self-start">
           At PhysioPlus, We Embrace the Nuances of Health and Physiotherapy
         </div>
         <div className="self-center w-[954px] max-w-full mt-8">
@@ -134,12 +134,14 @@ function AboutUs() {
               </div>
             </div>
           </div>
-        </div>{" "}
-        <div className="self-center text-2xl leading-8 text-black whitespace-nowrap mt-14 max-md:max-w-full max-md:mt-10">
+        </div>
+        <hr className="rounded-lg w-[69px] h-[3.1px] mx-auto mt-[70px] opacity-70 bg-green-700"></hr>
+        <div className="self-center mt-5 text-2xl leading-8 text-black whitespace-nowrap max-md:max-w-full max-md:mt-10">
           but it's not just us ... we have a whole team of angels, advisers and
           mentors backing us up.
         </div>
-        <div className="text-black text-4xl font-bold leading-[50.25599999999999px] self-center whitespace-nowrap mt-32 max-md:mt-10">
+        <div className="rounded-lg w-[69px] h-[2.7px] mx-auto mt-7 opacity-70 bg-green-700"></div>
+        <div className="self-center mt-32 text-4xl font-bold text-black whitespace-nowrap max-md:mt-10">
           Mission
         </div>
       </div>

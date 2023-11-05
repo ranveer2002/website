@@ -28,10 +28,10 @@ const Home = (props) => {
           className="fixed bottom-3 right-3"
         />
       </a>
-      <section className="w-full font-inter  groupbgHomeSection">
+      <section className="w-full font-inter groupbgHomeSection">
         <div className=" w-[829px] h-[140px] font-bold text-black text-[52px] mx-auto py-20">
           <div className="ml-28">Free, Personalized Online</div>
-          <div className="-mt-4 ml-24">Physiotherapy Health Care</div>
+          <div className="ml-24 -mt-4">Physiotherapy Health Care</div>
         </div>
         <div className="w-[1041px] font-normal text-zinc-500 text-[16px] mt-20 mx-auto">
           <div className="ml-14">

@@ -1,11 +1,40 @@
-@keyframes slide {
+/* @keyframes slide {
   from {
-    transform: translateX(0);
-  }
-  to {
     transform: translateX(-100%);
   }
+  to {
+    transform: translateX(100%);
+  }
 }
+
 .mynews {
   animation: 5s slide infinite linear;
+}
+
+.mynews:hover {
+  animation-play-state: paused;
+} */
+@keyframes ticker {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+.ticker-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: ticker 30s linear infinite;
+}
+
+.ticker:hover {
+  animation-play-state: paused;
+  cursor: pointer;
 }

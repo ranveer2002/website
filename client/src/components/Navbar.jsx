@@ -6,7 +6,7 @@ const Navbar = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
   return (
     <>
-      <div className="flex justify-around items-center w-100vw h-[90px] font-helvetica">
+      <div className="flex justify-around items-center w-[1280px] h-[90px] mx-auto">
         <div className="mt-7">
           <Link to="/">
             <img

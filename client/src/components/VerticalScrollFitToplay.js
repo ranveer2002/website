@@ -34,7 +34,7 @@ const VerticalScrollFitToplay = () => {
       if (contentRef.current) {
         contentRef.current.removeEventListener("scroll", handleScroll);
       }
-    };
+    };    
   }, []);
 
   return (

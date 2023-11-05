@@ -46,7 +46,8 @@ const VerticalScrollFitToplay = () => {
         >
           <h1 className="text-2xl">Comprehensive Assessment</h1>
           <p className="text-zinc-500">
-          Multidisciplinary athlete evaluation by physiotherapists, psychologists, dietitians.
+            Multidisciplinary athlete evaluation by physiotherapists,
+            psychologists, dietitians.
           </p>
         </div>
         <div
@@ -55,7 +56,8 @@ const VerticalScrollFitToplay = () => {
         >
           <h1 className="text-2xl">Personalized Plan Development</h1>
           <p className="text-zinc-500">
-          Personalized plan for unique needs, integrating physical, mental, dietary aspects.
+            Personalized plan for unique needs, integrating physical, mental,
+            dietary aspects.
           </p>
         </div>
         <div
@@ -64,7 +66,8 @@ const VerticalScrollFitToplay = () => {
         >
           <h1 className="text-2xl">Targeted Interventions</h1>
           <p className="text-zinc-500">
-          Custom interventions: physiotherapy, psychology, nutrition for peak performance.
+            Custom interventions: physiotherapy, psychology, nutrition for peak
+            performance.
           </p>
         </div>
         <div
@@ -73,7 +76,8 @@ const VerticalScrollFitToplay = () => {
         >
           <h1 className="text-2xl">Performance Enhancement</h1>
           <p className="text-zinc-500">
-            Achieve optimal physical and mental performance through tailored plans and interventions.
+            Achieve optimal physical and mental performance through tailored
+            plans and interventions.
           </p>
         </div>
       </div>

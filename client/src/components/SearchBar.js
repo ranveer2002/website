@@ -56,9 +56,9 @@ const SearchBar = () => {
       setArea(event.target.value);
    }
    return(
-       <div className="w-[712px] h-[64px] rounded-md border border-neutral-500 flex items-center justify-around mt-14 mx-auto">
+       <div className="w-[712px] h-[54px] rounded-3xl border border-neutral-500 flex items-center justify-around mt-14 mx-auto">
            <div>
-              <select value={location} onChange={changeLocation} className="bg-transparent outline-none w-40 text-slate-700 text-lg cursor-pointer border border-slate-400 rounded-md py-1">
+              <select value={location} onChange={changeLocation} className="bg-transparent outline-none w-40 text-slate-700 text-lg cursor-pointer">
                 <option value="" className="">Location</option>
                 {
                     Locations.map((city)=>(
@@ -68,7 +68,7 @@ const SearchBar = () => {
               </select>  
            </div>
            <div className="relative">
-              <select value={area} onChange={changeArea} className="bg-transparent outline-none w-40 text-slate-700 text-lg cursor-pointer border border-slate-400 rounded-md py-1">
+              <select value={area} onChange={changeArea} className="bg-transparent outline-none w-40 text-slate-700 text-lg cursor-pointer">
                 <option value="" className="">Area</option>
                 {
                     Areas.map((area)=>(
@@ -78,7 +78,7 @@ const SearchBar = () => {
               </select>  
            </div>
            <div>
-           <select className="text-slate-700 text-lg bg-transparent outline-none cursor-pointer border border-slate-400 rounded-md py-1 w-40">
+           <select className="text-slate-700 text-lg bg-transparent outline-none cursor-pointer w-40">
               <option value="" className="">
                 Category
               </option>

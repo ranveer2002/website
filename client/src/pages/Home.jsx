@@ -65,10 +65,12 @@ const Home = (props) => {
           </div>
         </div>
         <div className="flex items-center justify-evenly mt-7">
-          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[287px] h-[78px] mt-9 mx-auto">
-              <p className="ml-3 text-3xl font-bold">Clinical Treatment</p>
-              <p className="text-3xl font-bold ml-9">Physiotherapy</p>
+          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[318px] text-center mt-9 mx-auto">
+              <p className="ml-3 text-3xl font-bold">
+                Clinical Treatment Physiotherapy
+              </p>
+              {/* <p className="text-3xl font-bold ml-9"></p> */}
             </div>
             <div className="w-[293px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
               <p>High quality physiotherapy care at our PhysioPlus</p>
@@ -88,10 +90,12 @@ const Home = (props) => {
             </button>
           </div>
 
-          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[293px] h-[78px] mt-9 mx-auto">
-              <p className="ml-3 text-3xl font-bold">Physio Home Visits</p>
-              <p className="ml-16 text-3xl font-bold">Availability</p>
+          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[318px] text-center mt-9 mx-auto">
+              <p className="ml-3 text-3xl font-bold">
+                Physio Home Visits Availability
+              </p>
+              {/* <p className="ml-16 text-3xl font-bold"></p> */}
             </div>
             <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
               <p className="ml-9">Home Visits by certified By PhysioPlus</p>
@@ -106,15 +110,17 @@ const Home = (props) => {
                 className="w-[315px] h-[179px] rounded-lg mx-5"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-9 hover:shadow-md transition-all 2s ease">
               Schedule a Treatment
             </button>
           </div>
 
-          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[218px] h-[78px] mt-9 mx-auto">
-              <p className="ml-1 text-3xl font-bold">Expert Online</p>
-              <p className="text-3xl font-bold">Physiotherapy</p>
+          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[318px] text-center mt-9 mx-auto">
+              <p className="ml-1 text-3xl font-bold">
+                Expert Online Physiotherapy
+              </p>
+              {/* <p className="text-3xl font-bold"></p> */}
             </div>
             <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
               <p className="ml-5">
@@ -139,6 +145,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+
       <section className="mt-32 mb-10">
         <div className="text-4xl font-semibold text-black ml-28 w-[765px]">
           Irresistible Offers Awaits You..

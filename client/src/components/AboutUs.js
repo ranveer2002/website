@@ -150,9 +150,8 @@ function AboutUs() {
         We've grown by embracing technology and collaborating with top
         physiotherapists. We now serve a broader audience, leading in
         physiotherapy consultancy and home treatment.
-      </div>{" "}
+      </div>
     </div>
   );
 }
-
 export default AboutUs;

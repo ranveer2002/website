@@ -10,24 +10,95 @@ import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
 import chechmark from "../assets/CheckMark.png";
-import { BiLogoWhatsappSquare } from "react-icons/bi";
+// import { BiLogoWhatsappSquare } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 import VerticalScroll from "../components/VerticalScroll";
 import SearchBar from "../components/SearchBar";
 import Slidein from "../components/Slidein";
+import botplay from "../assets/botplay.png";
+import botlogo from "../assets/botlogo.png";
+import whatsappimg from "../assets/whatsappimg.png";
+import { useState } from "react";
 const Home = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
-
+  const [isbotplay, setisbotplay] = useState(false);
+  const [ischat, setischat] = useState(false);
+  const [iswhatsapp, setiswhatsapp] = useState(false);
+  const BotActiveHandler = () => {
+    setisbotplay(!isbotplay);
+  };
+  const ChatHandler = () => {
+    setischat(true);
+    setiswhatsapp(false);
+  };
+  const WhatsappHandler = () => {
+    setiswhatsapp(true);
+    setischat(false);
+  };
   return (
     <div className="">
-      <a href="https://wa.me/9928088430">
-        <BiLogoWhatsappSquare
-          fontSize={48}
-          fill="green"
-          className="fixed bottom-3 right-3"
+      <button onClick={BotActiveHandler}>
+        <img
+          src={botplay}
+          alt="img"
+          className="z-50 w-[50px] h-[50px] fixed bottom-10 right-4"
         />
-      </a>
+      </button>
+      {isbotplay && (
+        <div className=" border border-green-500 fixed bottom-10 right-20 z-50 w-[382px] h-[581px] flex flex-col bg-white rounded-xl shadow-lg">
+          <div className="items-center justify-between p-4 bg-green-200 rounded-t-xl">
+            <div
+              className="text-green-700 bg-white rounded-full float-right -mt-7 -mr-6 hover:bg-green-100 border border-green-500 font-bold hover:cursor-pointer w-[30px] h-[30px] text-center justify-center flex"
+              onClick={BotActiveHandler}
+            >
+              <span>x</span>
+            </div>
+            <img src={botlogo} alt="logo" className="w-[75px] h-[21px] ml-32" />
+            <div className="flex flex-row mt-5 ml-3 space-x-2 ">
+              <button
+                className="w-[162px] h-[46px] text-green-700 text-lg font-semibold bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+                onClick={WhatsappHandler}
+              >
+                Whatsapp
+              </button>
+              <button
+                className="w-[162px] h-[46px] text-green-700 text-lg font-semibold bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+                onClick={ChatHandler}
+              >
+                Chat to Bot
+              </button>
+            </div>
+          </div>
+          {isbotplay && !ischat && (
+            <div className="flex flex-col items-center justify-center flex-1 px-4 py-4">
+              <img
+                src={whatsappimg}
+                alt="iconimg"
+                className="w-full max-w-[367px] h-auto"
+              />
+              <button className="w-full max-w-[367px] h-[46px] text-lg text-white font-semibold bg-green-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50">
+                <a
+                  href="https://wa.me/9928088430"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Chat on Whatsapp
+                </a>
+              </button>
+            </div>
+          )}
+          {ischat && !iswhatsapp && (
+            <div className="">
+              <span className="w-[360px] h-[17px] font-bold text-[16px] mt-5 ml-1 text-center flex justify-center tracking-[-0.485px]">
+                Please select an inquiry to initiate the process.
+              </span>
+              {/* we will start our bot code here */}
+            </div>
+          )}
+        </div>
+      )}
+
       <section className="w-full font-inter groupbgHomeSection">
         <div className=" w-[829px] h-[140px] font-bold text-black text-[52px] mx-auto py-20">
           <div className="ml-28">Free, Personalized Online</div>
@@ -65,10 +136,12 @@ const Home = (props) => {
           </div>
         </div>
         <div className="flex items-center justify-evenly mt-7">
-          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[287px] h-[78px] mt-9 mx-auto">
-              <p className="ml-3 text-3xl font-bold">Clinical Treatment</p>
-              <p className="text-3xl font-bold ml-9">Physiotherapy</p>
+          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[318px] text-center mt-9 mx-auto">
+              <p className="ml-3 text-3xl font-bold">
+                Clinical Treatment Physiotherapy
+              </p>
+              {/* <p className="text-3xl font-bold ml-9"></p> */}
             </div>
             <div className="w-[293px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
               <p>High quality physiotherapy care at our PhysioPlus</p>
@@ -88,10 +161,12 @@ const Home = (props) => {
             </button>
           </div>
 
-          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[293px] h-[78px] mt-9 mx-auto">
-              <p className="ml-3 text-3xl font-bold">Physio Home Visits</p>
-              <p className="ml-16 text-3xl font-bold">Availability</p>
+          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[318px] text-center mt-9 mx-auto">
+              <p className="ml-3 text-3xl font-bold">
+                Physio Home Visits Availability
+              </p>
+              {/* <p className="ml-16 text-3xl font-bold"></p> */}
             </div>
             <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
               <p className="ml-9">Home Visits by certified By PhysioPlus</p>
@@ -106,15 +181,17 @@ const Home = (props) => {
                 className="w-[315px] h-[179px] rounded-lg mx-5"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-9 hover:shadow-md transition-all 2s ease">
               Schedule a Treatment
             </button>
           </div>
 
-          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[218px] h-[78px] mt-9 mx-auto">
-              <p className="ml-1 text-3xl font-bold">Expert Online</p>
-              <p className="text-3xl font-bold">Physiotherapy</p>
+          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[318px] text-center mt-9 mx-auto">
+              <p className="ml-1 text-3xl font-bold">
+                Expert Online Physiotherapy
+              </p>
+              {/* <p className="text-3xl font-bold"></p> */}
             </div>
             <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
               <p className="ml-5">
@@ -139,6 +216,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+
       <section className="mt-32 mb-10">
         <div className="text-4xl font-semibold text-black ml-28 w-[765px]">
           Irresistible Offers Awaits You..

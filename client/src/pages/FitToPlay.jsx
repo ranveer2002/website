@@ -1,6 +1,6 @@
 import ImageCarousel from "../components/ImageCarousel";
 import TestimonialCarousel from "../components/Testimonial";
-import VerticalScrollFitToplay from "../components/VerticalScrollFitToplay";
+import VerticalStepper from "../components/VerticalStepper";
 
 const FitToplay = () => {
   return (
@@ -25,7 +25,7 @@ const FitToplay = () => {
         <ImageCarousel/>
       </section>
       <section className="mt-20">
-        <VerticalScrollFitToplay/>
+        <VerticalStepper/>
       </section>
       <section className="w-[1200px] h-[379px] mx-auto groupfittoplaybg">
         <div className="mt-16">

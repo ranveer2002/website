@@ -40,3 +40,54 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
+.step-container {
+  display: flex;
+  cursor: pointer;
+}
+
+.step-icon {
+  margin-right: 10px;
+}
+
+.step-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-top: -2px;
+}
+
+
+.step-desc {
+  font-size: smaller;
+  width: 578px;
+}
+
+.completed-icon {
+  color: green;
+}
+
+.stepper-container {
+  display: flex;
+}
+
+.steps {
+  flex-direction: column;
+}
+
+.content {
+  margin-left: 20px;
+}
+
+/* Add styles for active step */
+.step-container.active .step-title,
+.step-container.active .step-desc {
+  font-weight: bold;
+}
+
+/* Ensure images fill the container but don't overflow */
+.content img {
+  max-width: 100%;
+  height: auto;
+}

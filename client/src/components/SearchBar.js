@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const SearchBar = () => {
+  const navigate = useNavigate();
   const Locations = [
     {
       name: "Jaipur",
@@ -48,6 +50,21 @@ const SearchBar = () => {
   const changeArea = (event) => {
     setArea(event.target.value);
   };
+  // const [visibleOptions, setVisibleOptions] = useState(5);
+
+  // const handleScroll = (event) => {
+  //   // Increase the number of visible options when scrolled
+  //   setVisibleOptions((prevVisibleOptions) => prevVisibleOptions + 1);
+  // };
+
+  // // Attach the scroll event listener
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <div className="w-[812px] h-[54px] rounded-xl border border-neutral-500 flex items-center justify-around mt-14 mx-auto">
       <div className="relative flex">
@@ -90,6 +107,7 @@ const SearchBar = () => {
           <option value="" className="">
             Location
           </option>
+
           {Locations.map((city) => (
             <option value={city.name} className="">
               {city.name}
@@ -225,7 +243,10 @@ const SearchBar = () => {
         </select>
       </div>
       <div>
-        <button className="w-[94px] h-[35px] p-1 font-bold text-white bg-green-500 rounded-md">
+        <button
+          className="w-[94px] h-[35px] p-1 font-bold text-white bg-green-500 rounded-md"
+          onClick={() => navigate("/doctors")}
+        >
           Search
         </button>
       </div>

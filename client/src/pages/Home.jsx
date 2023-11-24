@@ -10,6 +10,7 @@ import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
 import chechmark from "../assets/CheckMark.png";
+import { useRef, useEffect } from "react";
 // import { BiLogoWhatsappSquare } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
@@ -57,8 +58,31 @@ const Home = (props) => {
     "I do know and i can help u",
     "I do know and i can help u",
   ];
+  // const chatbotRef = useRef(null); // Create a ref for the chatbot container
+
+  // useEffect(() => {
+  //   // Create the script element
+  //   const script = document.createElement("script");
+  //   script.src = "https://www.chatbase.co/embed.min.js";
+  //   script.async = true;
+  //   script.defer = true;
+  //   script.setAttribute("chatbotId", "RZAkBsSjRWLXNyiHTSWQx");
+  //   script.setAttribute("domain", "www.chatbase.co");
+
+  //   // Append the script to the document head
+  //   document.head.appendChild(script);
+
+  //   // Cleanup function to remove script when component unmounts
+  //   return () => {
+  //     document.head.removeChild(script);
+  //   };
+  // }, []); // Empty dependency array to only run once on mount
+
+  // // ... other code
   return (
     <div className="">
+      {/* <div ref={chatbotRef} style={{ height: "700px", width: "100%" }}></div> */}
+
       <button onClick={BotActiveHandler}>
         <img
           src={botplay}
@@ -111,10 +135,16 @@ const Home = (props) => {
           )}
           {ischat && !iswhatsapp && (
             <div className="">
-              <span className="w-[300px] h-[10px] font-bold text-[13px] mt-5 ml-1 text-center flex justify-center tracking-[-0.485px]">
-                Please select an inquiry to initiate the process.
+              <span className="w-[320px] h-[10px] font-bold text-[13px] mt-5 ml-1 text-center flex justify-center tracking-[-0.485px]">
+                <iframe
+                  src="https://www.chatbase.co/chatbot-iframe/RZAkBsSjRWLXNyiHTSWQx"
+                  width="94%"
+                  title="mybot"
+                  frameborder="0"
+                  className=" border border-green-500  h-[290px] -mt-6 rounded-bl-xl rounded-br-xl -ml-[30px]"
+                />
               </span>
-              <ul className="mt-5 overflow-x-scroll rounded-lg h-[220px]">
+              {/* <ul className="mt-5 overflow-x-scroll rounded-lg h-[220px]">
                 {questions.map((question, index) => (
                   <li key={index} className="flex justify-center mt-2 mb-2">
                     <button
@@ -125,7 +155,10 @@ const Home = (props) => {
                     </button>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
+              {/* <span>
+               
+              </span> */}
             </div>
           )}
         </div>

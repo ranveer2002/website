@@ -4,36 +4,36 @@ import VerticalStepper from "../components/VerticalStepper";
 
 const FitToplay = () => {
   return (
-    <div className="mx-auto font-inter">
-      <section className="mt-28 flex flex-col items-center">
-        <p className="text-3xl font-semibold text-black">
+    <div className="w-full mx-auto font-inter">
+      <section className="mt-28 flex flex-col justify-center items-center px-4 md:px-4 lg:px-8 sm:mx-auto">
+        <p className="text-4xl md:text-xl lg:text-2xl font-semibold text-black text-center sm:mx-auto">
           An Assessment for Budding Athletes
         </p>
-        <p className="w-[978px] text-xl font-normal text-neutral-700 ml-16 mt-6">
+        <p className="text-lg md:text-lg lg:text-xl font-normal text-neutral-700 mt-6 text-center mx-4">
           Are you an aspiring athlete looking to maximize your potential? The
           "Fit To Play" program is here to help
         </p>
-        <p className="text-xl font-normal text-neutral-700">
+        <p className="text-lg md:text-lg lg:text-xl font-normal text-neutral-700 text-center mx-4">
           you achieve your goals and overcome the hurdles on your path to
           excellence.
         </p>
-        <button className="text-white border w-[164px] h-[62px] text-[20px] font-bold bg-green-500 rounded-[6px] mt-9 shadow-lg px-2 ">
+        <button className="text-white border w-40 h-12 md:w-52 md:h-16 text-lg font-bold bg-green-500 rounded-md mt-9 shadow-lg px-2 ">
           Get Started
         </button>
       </section>
-      <section className="mt-20">
+      <section className="mt-20 sm:mx-auto">
         <ImageCarousel />
       </section>
-      <section className="mt-20">
+      <section className="mt-20 sm:mx-auto">
         <VerticalStepper />
       </section>
-      <section className="w-[1200px] h-[379px] mx-auto groupfittoplaybg">
-        <div className="mt-16">
-          <p className="w-[253px] text-3xl font-semibold mx-auto pt-12">
+      <section className="sm:mx-auto px-4 py-14 md:px-6 lg:w-[1200px] groupfittoplaybg">
+        <div className="mt-16 text-center">
+          <p className="text-xl md:text-2xl font-semibold mx-auto">
             What we offer
           </p>
         </div>
-        <div className="flex justify-evenly items-center mt-[91px]">
+        <div className="flex flex-col md:flex-row justify-evenly items-center mt-10 sm:mx-auto">
           <div className="">
             <div className="relative">
               <div className="absolute mt-[6px] ml-[6px]">
@@ -70,7 +70,7 @@ const FitToplay = () => {
                 />
               </svg>
             </div>
-            <p className="text-[19px] font-semibold mt-5">Scientific Methods</p>
+            <p className="text-[19px] font-semibold mt-3">Scientific Methods</p>
             <p className="w-[288px] text-[14px] font-normal">
               We employ the latest scientific approaches to help you achieve
               superior results.
@@ -112,7 +112,7 @@ const FitToplay = () => {
                 />
               </svg>
             </div>
-            <p className="text-[19px] font-semibold mt-5">
+            <p className="text-[19px] font-semibold mt-3">
               Doctor-Patient Communication
             </p>
             <p className="w-[288px] text-[14px] font-normal">
@@ -156,7 +156,7 @@ const FitToplay = () => {
                 />
               </svg>
             </div>
-            <p className="text-[19px] font-semibold mt-5">Health Analysis</p>
+            <p className="text-[19px] font-semibold mt-3">Health Analysis</p>
             <p className="w-[288px] text-[14px] font-normal">
               Comprehensive health assessment for tailored issue identification
               and planning.
@@ -164,49 +164,49 @@ const FitToplay = () => {
           </div>
         </div>
       </section>
-      <section className="mt-20">
-        <div className="w-[223px] mx-auto">
-          <p className="text-3xl font-semibold">Testimonials</p>
+      <section className="mt-20 px-4 md:px-8 sm:mx-auto">
+        <div className="max-w-md md:max-w-xl mx-auto text-center">
+          <p className="text-xl md:text-2xl font-semibold">Testimonials</p>
         </div>
-        <div className="mt-5">
+        <div className="sm:mx-auto">
           <TestimonialCarousel />
         </div>
       </section>
-      <section className="w-[1200px] flex justify-evenly items-center h-[212px] mx-auto mt-24 bg-zinc-50">
+      <section className="flex flex-col md:flex-row justify-evenly items-center h-[212px] mx-auto mt-24 bg-zinc-50 px-4 md:px-8 sm:mx-auto">
         <div>
-          <p className="text-[26px] font-medium">
+          <p className="text-lg md:text-xl font-medium text-center md:text-left">
             Register Now and Begin Your Assessment Today!
           </p>
-          <p className="text-neutral-600 text-[21px] font-normal mt-2">
+          <p className="text-neutral-600 text-base md:text-lg font-normal mt-2 text-center md:text-left">
             Lorem ipsum dolor sit amet consectetur,
           </p>
         </div>
-        <div>
-          <button className="w-[122px] h-[40px] border border-black text-sm font-medium rounded-md">
+        <div className="mt-4 md:mt-0">
+          <button className="w-30 h-10 px-5 py-1 border border-black text-sm font-medium rounded-md mr-2">
             Learn More
           </button>
-          <button className="text-zinc-100 border w-[122px] h-[40px] text-sm font-semibold bg-green-500 rounded-md shadow-lg ml-7">
+          <button className="w-30 h-10 px-5 py-1 text-white font-semibold bg-green-500 rounded-md shadow-lg">
             Get Started
           </button>
         </div>
       </section>
-      <section className="w-full flex justify-evenly items-center h-[170px] mt-20 -mb-20 bg-zinc-50">
+      <section className="flex flex-col md:flex-row justify-evenly items-center h-[170px] mt-20 -mb-20 bg-zinc-50 px-4 md:px-8 sm:mx-auto">
         <div>
-          <p className="text-[26px] font-medium">
+          <p className="text-lg md:text-xl font-medium text-center md:text-left">
             Have Questions or Need Assistance?
           </p>
-          <p className="text-neutral-600 text-[21px] font-normal mt-2">
+          <p className="text-neutral-600 text-base md:text-lg font-medium mt-2">
             Reach Out to Our Expert Team!
           </p>
         </div>
-        <div>
+        <div className="mt-4 md:mt-0 sm:text-center">
           <input
             required
             name="email"
             placeholder="Enter your Email"
-            className="w-[216px] h-[40px] border border-slate-500 outline-none bg-transparent text-sm font-medium pl-2 rounded-md"
+            className="w-52 h-10 border border-slate-500 outline-none bg-transparent text-sm font-medium pl-2 rounded-md"
           />
-          <button className="text-zinc-100 border w-[88px] h-[40px] text-sm font-semibold bg-green-500 rounded-md shadow-lg ml-7">
+          <button className="w-22 h-10 px-5 py-1 text-white font-semibold bg-green-500 rounded-md shadow-lg ml-2 mt-2 md:mt-0">
             Send
           </button>
         </div>

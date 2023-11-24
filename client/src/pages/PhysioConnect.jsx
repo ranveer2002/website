@@ -1,3 +1,5 @@
+import HomeImage5 from "../assets/HomeImage5.png";
+import HomeImage6 from "../assets/HomeImage6.png";
 const Physioconnect = () => {
   return (
     <div className="flex flex-col bg-white">
@@ -154,7 +156,7 @@ const Physioconnect = () => {
               <div className="self-stretch mt-6 -mr-5 text-3xl font-semibold leading-9 text-black max-md:max-w-full">
                 Let’s join the physioplus revolution
               </div>
-              <div className="self-stretch mt-8 -mr-5 text-xl leading-6 text-neutral-700 max-md:max-w-full">
+              <div className="self-stretch mt-8 -mr-5 text-lg leading-6 text-neutral-700 max-md:max-w-full">
                 Lorem ipsum dolor sit amet consectetur. Amet sapien ipsum
                 blandit nam tempus. Viverra quis aliquam vestibulum quis velit
                 convallis cursus sed ac.
@@ -200,18 +202,71 @@ const Physioconnect = () => {
       <div className="text-black text-center text-4xl font-semibold leading-10 self-center max-w-[906px] mt-48 max-md:max-w-full max-md:mt-10">
         Join PhysioPlus: Elevate Your Practice
       </div>
-      <div className="text-zinc-600 text-center text-xl leading-6 self-center max-w-[1023px] mt-6 max-md:max-w-full">
+      <div className="text-zinc-600 text-center text-lg leading-6 self-center max-w-[1023px] mt-6 max-md:max-w-full">
         Download our app and connect with a thriving community at PhysioPlus.
         Experience streamlined scheduling, wider patient reach, and professional
         growth. Partner with us to enhance your practice and deliver exceptional
         care in Jaipur. Get started today and be a part of the future of
         physiotherapy services
       </div>
-      <img
-        loading="lazy"
-        srcSet="..."
-        className="aspect-[5.43] object-contain object-center w-[304px] overflow-hidden self-center max-w-full mt-11 mb-[723px] max-md:my-10"
-      />
+      <div className="flex mt-16 mx-auto">
+        <div className="absolute flex ml-28">
+          <div>
+            <img
+              src={HomeImage5}
+              alt="home"
+              loading="lazy"
+              className="w-[154px] h[50px] cursor-pointer"
+            />
+          </div>
+          <div className="mt-[0.2rem]">
+            <img
+              src={HomeImage6}
+              alt="home"
+              loading="lazy"
+              className="w-[154px] h[50px] cursor-pointer"
+            />
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="554"
+          height="300"
+          viewBox="0 0 554 558"
+          fill="none"
+          className="-mt-20"
+        >
+          <g filter="url(#filter0_f_948_3562)">
+            <path
+              d="M228.562 427.784C159.688 385.577 87.5576 351.83 121.575 296.32C155.592 240.809 158.941 235.343 270.661 134.212C412.003 33.2605 465.51 321.045 431.493 376.556C397.476 432.066 297.436 469.99 228.562 427.784Z"
+              fill="#EAFBEA"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_948_3562"
+              x="0.881348"
+              y="0.920288"
+              width="552.525"
+              height="556.903"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="56"
+                result="effect1_foregroundBlur_948_3562"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
     </div>
   );
 };

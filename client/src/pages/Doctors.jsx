@@ -2,7 +2,7 @@ import React from "react";
 import SearchBar from "../components/SearchBar";
 import FilterSideBar from "../components/FilterSideBar";
 import ProfessionalCard from "../components/ProfessionalCard";
-
+import { Link } from "react-router-dom";
 function Doctors() {
   const professionals = [
     {
@@ -511,9 +511,11 @@ function Doctors() {
           <div className="flex gap-16">
             <FilterSideBar />
             <div className="flex-col flex-1 space-y-6">
-              {professionals.map((professional, index) => (
-                <ProfessionalCard key={index} {...professional} />
-              ))}
+              <Link to="/doctorprofile">
+                {professionals.map((professional, index) => (
+                  <ProfessionalCard key={index} {...professional} />
+                ))}
+              </Link>
             </div>
           </div>
         </div>

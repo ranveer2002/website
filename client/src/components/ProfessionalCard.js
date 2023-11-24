@@ -3,6 +3,7 @@ import doctor from "../assets/doctor.png";
 import doctick from "../assets/doctick.png";
 import availtoday from "../assets/availtoday.png";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const ProfessionalCard = ({
   name,
@@ -12,6 +13,7 @@ const ProfessionalCard = ({
   reviews,
   docimg,
 }) => {
+  const navigate = useNavigate();
   return (
     <div className="bg-white border rounded-xl border-slate-700 h-[258px] w-[770px]">
       <div className="flex mx-auto mt-4 justify-evenly">

@@ -11,7 +11,7 @@ const Step = ({ isActive, isCompleted, label, desc, onClick }) => {
       onClick={onClick}
     >
       <div className="step-icon">
-          <LiaDotCircleSolid fontSize={25} className="completed-icon" />
+        <LiaDotCircleSolid fontSize={25} className="completed-icon" />
       </div>
       <div className={`step-text`}>
         <div className={`step-title ${isCompleted ? "completed" : ""}`}>
@@ -63,8 +63,15 @@ const VerticalStepper = () => {
   return (
     <div className="w-[1280px] mx-auto">
       <div>
-        <p className="text-3xl font-semibold w-[223px] mx-auto">How we work</p>
-        <p className="text-xl font-normal w-[538px] mx-auto mt-5 text-zinc-500">Multidisciplinary athlete evaluation by physiotherapists, <span className="ml-36">psychologists, dietitians.</span></p>
+        <p className="text-3xl font-semibold w-[223px] text-center mx-auto">
+          How we work
+        </p>
+        <p className="text-xl font-normal text-center w-[908px] mx-auto mt-5 text-zinc-500">
+          Multidisciplinary athlete evaluation by physiotherapists,{" "}
+        </p>
+        <span className="text-xl font-normal text-center justify-center flex w-full text-zinc-500">
+          psychologists, dietitians.
+        </span>
       </div>
       <div className="step-container mt-16 ml-5 space-x-52">
         <div className="steps">
@@ -80,7 +87,9 @@ const VerticalStepper = () => {
             </React.Fragment>
           ))}
         </div>
-        <div className="content w-[380px] h-[380px] mt-10">{stepContent[activeStep]}</div>
+        <div className="content w-[380px] h-[380px] mt-10">
+          {stepContent[activeStep]}
+        </div>
       </div>
     </div>
   );

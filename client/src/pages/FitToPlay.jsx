@@ -22,14 +22,14 @@ const FitToplay = () => {
         </button>
       </section>
       <section className="mt-20">
-        <ImageCarousel/>
+        <ImageCarousel />
       </section>
       <section className="mt-20">
-        <VerticalStepper/>
+        <VerticalStepper />
       </section>
       <section className="w-[1200px] h-[379px] mx-auto groupfittoplaybg">
         <div className="mt-16">
-          <p className="w-[223px] text-3xl font-semibold mx-auto pt-12">
+          <p className="w-[253px] text-3xl font-semibold mx-auto pt-12">
             What we offer
           </p>
         </div>
@@ -70,7 +70,7 @@ const FitToplay = () => {
                 />
               </svg>
             </div>
-            <p className="text-[19px] font-semibold">Scientific Methods</p>
+            <p className="text-[19px] font-semibold mt-5">Scientific Methods</p>
             <p className="w-[288px] text-[14px] font-normal">
               We employ the latest scientific approaches to help you achieve
               superior results.
@@ -112,7 +112,7 @@ const FitToplay = () => {
                 />
               </svg>
             </div>
-            <p className="text-[19px] font-semibold">
+            <p className="text-[19px] font-semibold mt-5">
               Doctor-Patient Communication
             </p>
             <p className="w-[288px] text-[14px] font-normal">
@@ -156,7 +156,7 @@ const FitToplay = () => {
                 />
               </svg>
             </div>
-            <p className="text-[19px] font-semibold">Health Analysis</p>
+            <p className="text-[19px] font-semibold mt-5">Health Analysis</p>
             <p className="w-[288px] text-[14px] font-normal">
               Comprehensive health assessment for tailored issue identification
               and planning.
@@ -168,7 +168,7 @@ const FitToplay = () => {
         <div className="w-[223px] mx-auto">
           <p className="text-3xl font-semibold">Testimonials</p>
         </div>
-        <div>
+        <div className="mt-5">
           <TestimonialCarousel />
         </div>
       </section>

@@ -244,7 +244,7 @@ const SearchBar = () => {
       </div>
       <div>
         <button
-          className="w-[94px] h-[35px] p-1 font-bold text-white bg-green-500 rounded-md"
+          className="w-[94px] h-[35px] p-1 font-bold text-white bg-green-600 rounded-md"
           onClick={() => navigate("/doctors")}
         >
           Search

@@ -17,7 +17,7 @@ const FitToplay = () => {
           you achieve your goals and overcome the hurdles on your path to
           excellence.
         </p>
-        <button className="text-white border w-40 h-12 md:w-52 md:h-16 text-lg font-bold bg-green-500 rounded-md mt-9 shadow-lg px-2 ">
+        <button className="text-white border w-40 h-12 md:w-44 md:h-12 text-lg font-bold bg-green-500 rounded-md mt-9 shadow-lg px-2 ">
           Get Started
         </button>
       </section>

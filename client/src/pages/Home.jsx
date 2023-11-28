@@ -187,100 +187,96 @@ const Home = (props) => {
       </section>
       <section className="font-inter w-[1280px] mx-auto">
         <div className="mt-32 ml-12">
-          <p className="text-[18px] font-semibold text-green-700 ml-1">
+          <p className="text-xl font-semibold text-green-700 ml-1">
             Service
           </p>
           <div>
-            <p className="w-[765px] h-[61px] text-[38px] font-semibold">
+            <p className="w-[765px] h-[61px] text-[42px] font-semibold">
               Exceptional Services You Can Rely On
             </p>
-            <p className="ml-1 text-slate-500">
+            <p className="ml-1 text-lg text-slate-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               veniam{" "}
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-evenly mt-7">
-          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[318px] text-center mt-9 mx-auto">
-              <p className="ml-3 text-3xl font-bold">
+        <div className="flex items-center justify-evenly mt-14">
+          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md hover:cursor-pointer hover:-translate-y-5 duration-700 transition-all 7s ease">
+            <div className="text-center mt-7 mx-auto">
+              <p className="text-3xl font-bold">
                 Clinical Treatment Physiotherapy
               </p>
-              {/* <p className="text-3xl font-bold ml-9"></p> */}
             </div>
-            <div className="w-[293px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
-              <p>High quality physiotherapy care at our PhysioPlus</p>
-              <p>Centre near you. Best Treatment for Ortho / Neuro</p>
-              <p className="ml-16">and many more Issues</p>
+            <div className="px-5 mt-5 text-sm font-normal text-slate-500 mx-auto">
+              <p>High quality physiotherapy care at our PhysioPlus Centre near you. Best Treatment for Ortho / Neuro and many more Issues</p>
             </div>
-            <div className="mt-8">
+            <div className="px-5 mt-5">
               <img
                 src={i1}
                 alt=""
                 loading="lazy"
-                className="w-[315px] h-[179px] rounded-lg mx-5"
+                className="aspect-video rounded-lg mx-auto"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
+            <div className="px-5">
+              <button className="border border-zinc-400 text-green-700 text-sm font-semibold rounded-lg mt-4 mx-auto px-16 py-2 hover:text-white hover:bg-green-600 transition-all 3s ease">
               Schedule a Treatment
-            </button>
+              </button>
+            </div>
           </div>
 
-          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[318px] text-center mt-9 mx-auto">
-              <p className="ml-3 text-3xl font-bold">
-                Physio Home Visits Availability
+          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md hover:cursor-pointer hover:-translate-y-5 duration-700 transition-all 5s ease">
+            <div className="text-center mt-7 mx-auto">
+              <p className="text-3xl font-bold">
+                Physio's Home Visits Availability
               </p>
-              {/* <p className="ml-16 text-3xl font-bold"></p> */}
             </div>
-            <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
-              <p className="ml-9">Home Visits by certified By PhysioPlus</p>
-              <p>Physiotherapists for Patients with mobility issues &</p>
-              <p className="ml-10">for patients looking for convenience</p>
+            <div className="px-5 mt-5 text-sm font-normal text-slate-500 mx-auto">
+              <p>Home Visits by certified PhysioPlus Physiotherapists for Patients with moility issues & for patients looking for convenience</p>
             </div>
-            <div className="mt-8 ">
+            <div className="px-5 mt-5">
               <img
                 src={i2}
                 alt=""
                 loading="lazy"
-                className="w-[315px] h-[179px] rounded-lg mx-5"
+                className="aspect-video rounded-lg mx-auto"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-9 hover:shadow-md transition-all 2s ease">
+            <div className="px-5">
+              <button className="border border-zinc-400 text-green-700 text-sm font-semibold rounded-lg mt-4 mx-auto px-16 py-2 hover:text-white hover:bg-green-600 transition-all 3s ease">
               Schedule a Treatment
-            </button>
+              </button>
+            </div>
           </div>
 
-          <div className="border w-[360px] h-[520px] rounded-2xl groupBgCard shadow-md">
-            <div className="w-[318px] text-center mt-9 mx-auto">
-              <p className="ml-1 text-3xl font-bold">
-                Expert Online Physiotherapy
+          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md hover:cursor-pointer hover:-translate-y-5 duration-700 transition-all 5s ease">
+            <div className="text-center mt-7 mx-auto">
+              <p className="text-3xl font-bold">
+                Expert's Online Physiotherapy
               </p>
-              {/* <p className="text-3xl font-bold"></p> */}
             </div>
-            <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
-              <p className="ml-5">
-                Certified PhysioPlus therapists offer online
+            <div className="px-5 mt-5 text-sm font-normal text-slate-500 mx-auto">
+              <p>
+                Certified PhysioPlus therapists offer online sessions for patients with mobility challenges and those seeking convenience.
               </p>
-              <p className="ml-1">
-                sessions for patients with mobility challenges and
-              </p>
-              <p className="ml-16">those seeking convenience.</p>
             </div>
-            <div className="mt-8">
+            <div className="px-5 mt-5">
               <img
                 src={i3}
                 alt=""
                 loading="lazy"
-                className="w-[315px] h-[179px] mx-5 rounded-lg"
+                className="aspect-video mx-auto rounded-lg"
               />
             </div>
-            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6 hover:shadow-md transition-all 2s ease">
+            <div className="px-5">
+              <button className="border border-zinc-400 text-green-700 text-sm font-semibold rounded-lg mt-4 mx-auto px-16 py-2 hover:text-white hover:bg-green-600 transition-all 3s ease">
               Schedule a Treatment
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </section>
+
 
       <section className="mt-32 mb-10">
         <div className="text-4xl font-semibold text-black ml-28 w-[765px]">

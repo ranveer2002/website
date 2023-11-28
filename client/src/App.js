@@ -1,6 +1,8 @@
 import "./App.css";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsCondition from "./components/TermsCondition";
 import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -45,6 +47,8 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/doctors" element={<Doctors />} />
             <Route path="/doctorprofile" element={<DoctorProfile />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms&condition" element={<TermsCondition/>} />
           </Routes>
           <FooterNav />
         </>

@@ -13,6 +13,8 @@ import Products from "./pages/Products";
 import FooterNav from "./components/FooterNav";
 import Doctors from "./pages/Doctors";
 import DoctorProfile from "./pages/DoctorProfile";
+import ProductPreview from "./components/ProductPreview";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   const [isLoginClicked, setIsLoginClicked] = useState(false);
@@ -49,6 +51,8 @@ function App() {
             <Route path="/doctorprofile" element={<DoctorProfile />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms&condition" element={<TermsCondition/>} />
+            <Route path="/product-preview" element={<ProductPreview/>} />
+            <Route path="/aboutus" element={<AboutUs/>} />
           </Routes>
           <FooterNav />
         </>

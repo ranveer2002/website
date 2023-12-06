@@ -66,7 +66,7 @@ const SearchBar = () => {
   // }, []);
 
   return (
-    <div className="w-[812px] h-[54px] rounded-xl border border-neutral-500 flex items-center justify-around mt-14 mx-auto">
+    <div className="max-w-[812px] h-[54px] rounded-xl border border-neutral-500 flex items-center justify-around mt-14 mx-auto">
       <div className="relative flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,6 @@ const SearchBar = () => {
           <option value="" className="">
             Location
           </option>
-
           {Locations.map((city) => (
             <option value={city.name} className="">
               {city.name}

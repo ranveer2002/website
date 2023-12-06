@@ -19,32 +19,30 @@ const Login = (props) => {
     navigate("/");
   };
   return (
-    <div className="w-100vw h-[650px] group-loginbg-color font-inter">
-      <div className="w-[500px] h-full border bg-white">
-        <div className="w-[450px] h-[600px] ml-10">
-          <div className="flex items-center justify-center w-6 h-6 mt-5 -ml-6 text-green-700 rounded-full cursor-pointer hover:bg-green-700 hover:text-white">
-            <div
-              onClick={() => {
-                setIsLoginClicked(false);
-                navigate(-1);
-              }}
-            >
-              <IoIosArrowBack size={18} />
-            </div>
+    <div className="w-full h-full group-loginbg-color font-inter">
+      <div className="w-[500px] bg-white">
+        <div className="pt-4 pb-7">
+          <div
+            onClick={() => {
+              setIsLoginClicked(false);
+              navigate(-1);
+            }}
+            className="w-8 h-8 ml-10 px-1 py-1 text-white rounded-full cursor-pointer bg-green-500 hover:bg-green-700 duration-300"
+          >
+            <IoIosArrowBack size={24}/>
           </div>
-
-          <div className="mt-16">
+          <div className="mt-10">
             <img
               src={Logo}
               alt="logo"
               loading="lazy"
-              className="w-[174px] h-[65px] ml-[120px]"
+              className="w-[174px] h-[65px] mx-auto"
             />
-            <p className="text-xl font-bold text-green-700 mt-2 ml-[120px]">
+            <p className="text-xl font-bold text-green-700 mt-3 text-center">
               Hey, Welcome back
             </p>
           </div>
-          <form onSubmit={submitHandler} className="ml-14">
+          <form onSubmit={submitHandler} className="text-center">
             <input
               required
               name="email"
@@ -63,22 +61,20 @@ const Login = (props) => {
               minLength="8"
               className="w-[320px] text-lg border px-2 py-3 rounded-lg bg-sky-100 outline-none mt-8"
             />
-            <button className="w-[320px] text-white text-lg font-medium border px-2 py-3 rounded-lg bg-green-600 outline-none mt-8">
+            <button className="w-[320px] text-white text-lg font-medium border px-2 py-3 rounded-lg bg-green-500 outline-none mt-8 hover:bg-green-700 duration-300">
               Login
             </button>
           </form>
-          <div className="flex w-[320px] utems-center my-8 gap-x-2 ml-14">
+          <div className="w-[320px] mx-auto flex justify-center items-center mt-8 gap-x-1">
             <div className="w-full h-[1px] bg-slate-400"></div>
-            <p className="text-slate-500 font-medium leading-[1.375rem] mt-[-12px]">
-              OR
-            </p>
+            <p className="text-slate-500 font-medium leading-[1.375rem]">OR</p>
             <div className="w-full h-[1px] bg-slate-400"></div>
           </div>
-          <div className="w-[320px] flex justify-center items-center rounded-lg font-medium text-green-800 text-lg border ml-14 px-[12px] py-[8px] gap-x-2 mt-6 bg-sky-100">
+          <div className="w-[320px] flex justify-center items-center rounded-lg font-medium text-green-800 text-lg border mx-auto px-[12px] py-[8px] gap-x-2 mt-5 bg-sky-100">
             <FcGoogle className="text-2xl" />
             <p>Login with Google</p>
           </div>
-          <div className="flex items-center justify-center mt-5">
+          <div className="flex items-center justify-center mt-9">
             <p className="text-slate-500">Don't have an Account?&nbsp;</p>
             <a href="/" className="text-green-700">
               Sign Up

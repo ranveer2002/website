@@ -15,7 +15,7 @@ const ProfessionalCard = ({
 }) => {
   const navigate = useNavigate();
   return (
-    <div className="bg-white border rounded-xl border-slate-700 h-[258px] w-[770px]">
+    <div className="bg-white border rounded-xl border-slate-700 h-[258px] w-[770px] mb-7">
       <div className="flex mx-auto mt-4 justify-evenly">
         <div className="flex mb-4 space-x-8">
           <img
@@ -70,7 +70,7 @@ const ProfessionalCard = ({
         </div>
       </div>
 
-      <button className="w-full py-1 text-xl font-semibold text-green-600 rounded-b-xl bg-emerald-200 ">
+      <button className="w-full py-2 text-xl font-semibold text-green-600 rounded-b-xl bg-emerald-200">
         Book Appointment
       </button>
     </div>

@@ -164,17 +164,17 @@ const Home = (props) => {
         </div>
       )}
 
-      <section className="w-full font-inter groupbgHomeSection">
-        <div className=" w-[829px] h-[140px] font-bold text-black text-[52px] mx-auto py-20">
-          <div className="ml-28">Free, Personalized Online</div>
-          <div className="ml-24 -mt-4">Physiotherapy Health Care</div>
+      <section className="max-w-[1280px] mx-auto font-inter groupbgHomeSection">
+        <div className="text-black text-2xl font-bold text-center sm:text-lg sm:mt-16 sm:mx-auto  md:text-xl lg:text-3xl xl:text-4xl">
+          <div>Free, Personalized Online</div>
+          <div>Physiotherapy Health Care</div>
         </div>
-        <div className="w-[1041px] font-normal text-zinc-500 text-[16px] mt-20 mx-auto">
-          <div className="ml-14">
+        <div className="max-w-[81%] text-center mx-auto text-zinc-500 mt-2 text-sm sm:text-base sm:mx-auto  md:text-lg lg:text-lg">
+          <div>
             Start improving phsyical health and well being today. Let PhysioPlus
             shows you how. Building Power to Build A Physically
           </div>
-          <div className="ml-80">
+          <div className="w-[300px] sm:w-[500px] sm:mx-auto">
             Healthy World : Supporting Sportsman carrer growth
           </div>
         </div>
@@ -185,23 +185,23 @@ const Home = (props) => {
       <section>
         <Slidein />
       </section>
-      <section className="font-inter w-[1280px] mx-auto">
-        <div className="mt-32 ml-12">
-          <p className="text-xl font-semibold text-green-700 ml-1">
+      <section className="font-inter max-w-[1280px] mx-auto">
+        <div className="mt-3 sm:mt-32 sm:ml-12 px-2">
+          <p className="text-xl font-semibold text-green-700 sm:text-xl md:text-2xl ">
             Service
           </p>
           <div>
-            <p className="w-[765px] h-[61px] text-[42px] font-semibold">
+            <p className="max-w-[765px] text-lg sm:text-[42px] font-semibold sm:mt-2">
               Exceptional Services You Can Rely On
             </p>
-            <p className="ml-1 text-lg text-slate-500">
+            <p className="text-sm sm:text-lg sm:mt-2 text-slate-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               veniam{" "}
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-evenly mt-14">
-          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md hover:cursor-pointer hover:-translate-y-5 duration-700 transition-all 7s ease">
+        <div className="flex-1 px-7 mt-14 sm:flex items-center justify-evenly">
+          <div className="border max-w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md hover:cursor-pointer sm:hover:-translate-y-5 duration-700 transition-all 7s ease">
             <div className="text-center mt-7 mx-auto">
               <p className="text-3xl font-bold">
                 Clinical Treatment Physiotherapy
@@ -225,7 +225,7 @@ const Home = (props) => {
             </div>
           </div>
 
-          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md hover:cursor-pointer hover:-translate-y-5 duration-700 transition-all 5s ease">
+          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md mt-5 sm:hover:cursor-pointer sm:hover:-translate-y-5 duration-700 transition-all 5s ease">
             <div className="text-center mt-7 mx-auto">
               <p className="text-3xl font-bold">
                 Physio's Home Visits Availability
@@ -249,7 +249,7 @@ const Home = (props) => {
             </div>
           </div>
 
-          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md hover:cursor-pointer hover:-translate-y-5 duration-700 transition-all 5s ease">
+          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md mt-5 sm:hover:cursor-pointer sm:hover:-translate-y-5 duration-700 transition-all 5s ease">
             <div className="text-center mt-7 mx-auto">
               <p className="text-3xl font-bold">
                 Expert's Online Physiotherapy
@@ -482,15 +482,15 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="w-[1280px] flex justify-around space-x-20 mx-auto mt-20">
+      <section className="max-w-[1280px] md:flex justify-around md:space-x-20 mx-auto mt-5 sm:mt-20 px-4">
         <div>
-          <p className="w-[519px] h-[111px] text-[35px] font-semibold mt-20">
+          <p className="sm:max-w-[519px] text-2xl sm:text-2xl md:text-[35px] font-semibold md:mt-20">
             Unleash Extraordinary Possibilities with Our App!
           </p>
-          <p className="text-xl font-normal text-zinc-600">
+          <p className="text-xl sm:mt-5 font-normal text-zinc-600">
             Start your 30-day free trail today.
           </p>
-          <div className="flex mt-20">
+          <div className="flex mt-5 sm:mt-20">
             <div>
               <img
                 src={HomeImage5}
@@ -509,7 +509,7 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="relative -ml-10">
+        <div className="relative -ml-10 pt-10 px-7">
           <div>
             <img
               src={HomeImage4}
@@ -518,7 +518,7 @@ const Home = (props) => {
               className="w-[256px] h-[438px] absolute ml-12 -mt-7"
             />
           </div>
-          <div>
+          <div className="px-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="330"

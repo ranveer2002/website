@@ -17,23 +17,17 @@ const RespNavbar = () => {
   };
 
   return (
-    <nav className="mt-7">
-      <ul className="hidden sm:flex">
+    <nav className="fixed w-[250px] border-r border-white h-screen px-3 ease-in-out duration-700 bg-white">
+      <ul className="">
         {pages.map((page) => (
           <Link to={page.path} key={page.id}>
             <li
               key={page.id}
-              className={`text-base font-normal px-5 cursor-pointer ${
-                activePage === page.id
-                  ? "bg-green-50 text-black rounded-md p-1 transition-transform hover:scale-105 "
-                  : "hover:bg-gray-50 rounded-md p-1 transition transform hover:scale-105"
-              }`}
+              className={`text-xl text-black my-2 font-medium cursor-pointer`}
               onClick={() => handlePageClick(page.id)}
             >
               <span
-                className={`block transition-transform ${
-                  activePage === page.id ? "translate-x-2" : "translate-x-0"
-                }`}
+                className={`block`}
               ></span>
               {page.name}
             </li>

@@ -4,20 +4,20 @@ import VerticalStepper from "../components/VerticalStepper";
 
 const FitToplay = () => {
   return (
-    <div className="w-full mx-auto font-inter">
-      <section className="mt-28 flex flex-col justify-center items-center px-4 md:px-4 lg:px-8 sm:mx-auto">
-        <p className="text-4xl md:text-xl lg:text-2xl font-semibold text-black text-center sm:mx-auto">
+    <div className="max-w-full mx-auto font-inter">
+      <section className="flex flex-col justify-center items-center px-4 sm:mx-auto mt-28">
+        <p className="max-w-[70%] text-center text-black font-semibold text-xl sm:mx-auto sm:text-2xl md:text-3xl lg:text-4xl sm:px-2 md:px-6">
           An Assessment for Budding Athletes
         </p>
-        <p className="text-lg md:text-lg lg:text-xl font-normal text-neutral-700 mt-6 text-center mx-4">
+        <p className="max-w-[80%] mt-6 text-center text-neutral-700 font-normal mx-auto px-4 text-base sm:text-lg md:text-xl lg:text-xl sm:px-4 ">
           Are you an aspiring athlete looking to maximize your potential? The
           "Fit To Play" program is here to help
         </p>
-        <p className="text-lg md:text-lg lg:text-xl font-normal text-neutral-700 text-center mx-4">
+        <p className="max-w-[80%] text-center text-neutral-700 font-normal mx-auto px-4 text-base sm:text-lg md:text-xl lg:text-xl sm:px-4 ">
           you achieve your goals and overcome the hurdles on your path to
           excellence.
         </p>
-        <button className="text-white border w-40 h-12 md:w-44 md:h-12 text-lg font-bold bg-green-500 rounded-md mt-9 shadow-lg px-2 ">
+        <button className="mt-9 bg-green-500 text-white font-bold rounded-md shadow-lg px-2 w-36 h-10 sm:w-40 sm:h-12 md:w-44 md:h-14 lg:w-48 lg:h-16 text-sm sm:text-base md:text-lg lg:text-xl">
           Get Started
         </button>
       </section>
@@ -27,7 +27,7 @@ const FitToplay = () => {
       <section className="mt-20 sm:mx-auto">
         <VerticalStepper />
       </section>
-      <section className="sm:mx-auto px-4 py-14 md:px-6 lg:w-[1200px] groupfittoplaybg">
+      <section className="sm:mx-auto px-4 py-14 md:px-6 lg:w-[1280px] groupfittoplaybg">
         <div className="mt-16 text-center">
           <p className="text-xl md:text-2xl font-semibold mx-auto">
             What we offer
@@ -172,7 +172,8 @@ const FitToplay = () => {
           <TestimonialCarousel />
         </div>
       </section>
-      <section className="flex flex-col md:flex-row justify-evenly items-center h-[212px] mx-auto mt-24 bg-zinc-50 px-4 md:px-8 sm:mx-auto">
+      <section className="bg-zinc-50">
+        <div className="max-w-[100vw] flex flex-col md:flex-row justify-evenly items-center h-[212px] mx-auto mt-24 px-4 md:px-8 sm:mx-auto">
         <div>
           <p className="text-lg md:text-xl font-medium text-center md:text-left">
             Register Now and Begin Your Assessment Today!
@@ -188,6 +189,7 @@ const FitToplay = () => {
           <button className="w-30 h-10 px-5 py-1 text-white font-semibold bg-green-500 rounded-md shadow-lg">
             Get Started
           </button>
+        </div>
         </div>
       </section>
       <section className="flex flex-col md:flex-row justify-evenly items-center h-[170px] mt-20 -mb-20 bg-zinc-50 px-4 md:px-8 sm:mx-auto">

@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-
+import Slide1 from "../assets/slide1.png"
+import Slide2 from "../assets/slide2.png"
+import Slide3 from "../assets/slide3.png"
 const Slider = () => {
   const [index, setIndex] = useState(0);
-  const slides = [
-    "https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg",
-    "https://blog.cognifit.com/wp-content/uploads/2019/11/hiking-900x300.jpg",
-    "https://travelfree.info/wp-content/uploads/2018/02/croatia-waterfall-in-deep-forest-of-Cr-12755165-900x300.jpg",
-  ];
+  const slides = [ Slide1, Slide2, Slide3];
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
@@ -33,7 +31,7 @@ const Slider = () => {
           <span
             key={i}
             className={`dot inline-block rounded-full w-4 h-4 bg-d3d3d3 mx-2 ${
-              i === index ? "bg-green-500 scale-150" : "bg-green-500 scale-90 "
+              i === index ? "bg-green-500 scale-150" : "bg-green-500 scale-90"
             }`}
           ></span>
         ))}

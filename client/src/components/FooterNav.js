@@ -14,7 +14,7 @@ const FooterNav = () => {
         />
         <div className="self-center flex w-[525px] max-w-full items-start justify-between gap-5 mt-8 max-md:flex-wrap max-md:justify-center">
           <div className="self-start text-base text-center text-neutral-700">
-            <Link to="/Overview">Overview</Link>
+            <Link to="/aboutus">About</Link>
           </div>
           <div className="self-start text-base text-center text-neutral-700">
             <Link to="/products">Products</Link>

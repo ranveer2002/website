@@ -3,117 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 const SearchBar = () => {
   const navigate = useNavigate();
-  const Locations = [
-    {
-      name: "Jaipur",
-      areas: [
-        "Vaisali Nagar",
-        "Ajmer Road",
-        "Patrkar Colony",
-        "Malviya Nagar",
-        "Jhotwara",
-        "Panchywala",
-        "Khatipura",
-        "Durgapura",
-        "Sodala",
-        "Mansarovar",
-        "Vidhadhar Nagar",
-        "Adarsh Nagar",
-        "C-scheme",
-        "Bhrampuri",
-        "Raja Park",
-        "Shyam Nagar",
-        "Ridhi Sidhi",
-        "Shanti Nagar",
-        "Jagatpura",
-        "Bani Park",
-        "Govindpura",
-        "Mahesh Nagar",
-        "Pratap Nagar",
-        "Lal Kothi",
-        "Sanganer",
-      ],
-    },
-    {
-      name: "Delhi",
-      areas: ["area1", "area1", "area1", "area1"],
-    },
-  ];
-
-  const [location, setLocation] = useState("Location");
-  const [area, setArea] = useState("Area");
-  const [Areas, setAreas] = useState([]);
-  const changeLocation = (event) => {
-    setLocation(event.target.value);
-    setAreas(Locations.find((city) => city.name === event.target.value).areas);
-  };
-  const changeArea = (event) => {
-    setArea(event.target.value);
-  };
-  // const [visibleOptions, setVisibleOptions] = useState(5);
-
-  // const handleScroll = (event) => {
-  //   // Increase the number of visible options when scrolled
-  //   setVisibleOptions((prevVisibleOptions) => prevVisibleOptions + 1);
-  // };
-
-  // // Attach the scroll event listener
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   return (
-    <div className="max-w-[812px] h-[54px] rounded-xl border border-neutral-500 flex items-center justify-around mt-14 mx-auto">
-      <div className="relative flex">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="22"
-          height="22"
-          viewBox="0 0 22 22"
-          fill="none"
-          className="absolute ml-1"
-        >
-          <g clip-path="url(#clip0_635_652)">
-            <path
-              d="M11 11.9166C12.5188 11.9166 13.75 10.6854 13.75 9.16665C13.75 7.64786 12.5188 6.41665 11 6.41665C9.48124 6.41665 8.25002 7.64786 8.25002 9.16665C8.25002 10.6854 9.48124 11.9166 11 11.9166Z"
-              stroke="#878787"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M11 20.1666C14.6667 16.5 18.3334 13.2167 18.3334 9.16665C18.3334 5.11656 15.0501 1.83331 11 1.83331C6.94993 1.83331 3.66669 5.11656 3.66669 9.16665C3.66669 13.2167 7.33335 16.5 11 20.1666Z"
-              stroke="#878787"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_635_652">
-              <rect width="22" height="22" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-
-        <select
-          value={location}
-          onChange={changeLocation}
-          className="w-40 text-lg text-center bg-transparent outline-none cursor-pointer text-slate-700"
-        >
-          <option value="" className="">
-            Location
-          </option>
-          {Locations.map((city) => (
-            <option value={city.name} className="">
-              {city.name}
-            </option>
-          ))}
-        </select>
-      </div>
+    <div className="max-w-[600px] h-[54px] rounded-xl border border-neutral-500 flex items-center justify-around mt-14 mx-auto">
+    
       <div className="flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -159,21 +52,14 @@ const SearchBar = () => {
           </defs>
         </svg>
         <select
-          value={area}
-          onChange={changeArea}
           className="w-48 text-lg text-center bg-transparent outline-none cursor-pointer text-slate-700"
         >
           <option value="" className="h-10">
             Neighbourhood
           </option>
-          {Areas.map((area) => (
-            <option value={area} className="">
-              {area}
-            </option>
-          ))}
         </select>
       </div>
-      <div className="flex">
+      <div className="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"

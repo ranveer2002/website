@@ -1,14 +1,15 @@
 import doctor from "../assets/doctor.png";
 import check from "../assets/doctick.png";
-// import docicon from "../assets/docicon.png";
+import docicon from "../assets/docicon.png";
 import { FiPhoneCall } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
 import DoctorAbout from "../components/DoctorAbout";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BiPhoneCall } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
-
+import { useNavigate } from "react-router-dom";
 const DoctorProfile = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex justify-around mt-9">
       <div>
@@ -33,12 +34,12 @@ const DoctorProfile = () => {
               Professional Chiropractor
             </p>
             <div className="flex space-x-1">
-              {/* <img
+              <img
                 src={docicon}
                 alt="docicon"
                 loading="lazy"
                 className="w-6 h-[85px] mt-1.5"
-              /> */}
+              />
               <div className="text-sm space-y-2 mt-2.5">
                 <p>Save money on appointment with physioplus premium.</p>
                 <p>In Practice for 10 Years</p>
@@ -49,6 +50,7 @@ const DoctorProfile = () => {
               <button
                 style={{ background: "rgba(57, 201, 133, 0.15)" }}
                 className="px-4 py-1 rounded-md text-green-600 text-sm font-semibold"
+                onClick={()=>navigate("/payment1")}
               >
                 Make Appointment
               </button>
@@ -118,7 +120,8 @@ const DoctorProfile = () => {
             <CiMail fontSize={20} className="mt-1" />
             <p className="text-neutral-500 text-base">example@gmail.com</p>
           </div>
-          <button className="bg-green-700 px-5 py-1 text-white text-sm font-medium rounded-md mt-4">
+          <button className="bg-green-700 px-5 py-1 text-white text-sm font-medium rounded-md mt-4"
+          onClick={()=>navigate("/payment1")}>
             Book an Appointment
           </button>
         </div>

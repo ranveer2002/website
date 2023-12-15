@@ -201,7 +201,7 @@ const Home = (props) => {
           </div>
         </div>
         <div className="flex-1 px-7 mt-14 sm:flex items-center justify-evenly">
-          <div className="border max-w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md hover:cursor-pointer sm:hover:-translate-y-5 duration-700 transition-all 7s ease">
+          <div className="border max-w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md mt-5 hover:cursor-pointer sm:hover:-translate-y-5 duration-700 transition-all 7s ease">
             <div className="text-center mt-7 mx-auto">
               <p className="text-3xl font-bold">
                 Clinical Treatment Physiotherapy
@@ -291,7 +291,7 @@ const Home = (props) => {
       <section className="mt-24">
         <VerticalScroll />
       </section>
-      <section className="w-[1280px] flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
+      <section className="max-w-[1280px] flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
         <div>
           <div className="w-[558px] h-[108px] -mt-40">
             <p className="text-[45px] font-bold ">Strength Physical Health</p>
@@ -335,7 +335,7 @@ const Home = (props) => {
               onClick={() => {
                 setIsLoginClicked(true);
               }}
-              className="text-white  border w-[227px] h-[54px] text-xl font-semibold bg-green-700 rounded-[10px] mt-20 shadow-lg"
+              className="text-white border w-[227px] h-[54px] text-xl font-semibold bg-green-700 rounded-[10px] mt-10 md:mt-20 shadow-lg"
             >
               Login For FREE
             </button>
@@ -345,7 +345,7 @@ const Home = (props) => {
           src={HomeImage}
           alt="home"
           loading="lazy"
-          className="w-[476px] h-[476px] rounded-2xl shadow-[rgb(239,245,255)_24px_-21px_1px_0px]"
+          className="w-full md:w-[476px] h-auto md:h-[476px] rounded-2xl shadow-[rgb(239,245,255)_24px_-21px_1px_0px] mt-10 md:mt-0"
         />
       </section>
       <section className="w-[1280px] flex justify-evenly mx-auto space-x-16 mb-20 mt-40 font-inter">
@@ -388,8 +388,8 @@ const Home = (props) => {
       </section>
 
       <section>
-        <div className="flex flex-col px-5 bg-zinc-50">
-          <div className="self-center mt-20 mb-8 text-5xl font-bold text-black whitespace-nowrap max-md:max-w-full max-md:text-4xl max-md:mt-10">
+        <div className="flex flex-col bg-zinc-50">
+          <div className="mt-20 mb-8 text-3xl self-center font-bold text-black whitespace-nowrap max-md:max-w-full px-4 md:text-4xl max-md:mt-10">
             Popular news and blogs
           </div>
           <div className="text-zinc-500 text-center text-xl self-center max-w-[694px] mt-9 max-md:max-w-full">
@@ -404,7 +404,7 @@ const Home = (props) => {
                     loading="lazy"
                     src={blogimg}
                     alt="blog1"
-                    className="self-start object-cover object-center w-full overflow-hidden aspect-square"
+                    className="self-start object-cover object-center w-full overflow-hidden aspect-square px-3 rounded-t-3xl"
                   />
                   <div className="flex w-[346px] max-w-full items-start gap-5 ml-3 mt-3 max-md:ml-2.5">
                     <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5 hover:cursor-pointer">
@@ -414,10 +414,10 @@ const Home = (props) => {
                       Tips{" "}
                     </div>
                   </div>
-                  <div className="mt-6 text-xl font-medium text-black">
+                  <div className="mt-6 text-xl font-medium text-black px-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   </div>
-                  <div className="mt-4 text-xl text-zinc-500">
+                  <div className="mt-4 text-xl px-4 text-zinc-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut
                   </div>
@@ -429,7 +429,7 @@ const Home = (props) => {
                     loading="lazy"
                     src={blogimg}
                     alt="blog2"
-                    className="self-start object-cover object-center w-full overflow-hidden aspect-square"
+                    className="self-start object-cover object-center w-full overflow-hidden aspect-square px-3 rounded-t-2xl"
                   />
                   <div className="flex w-[346px] max-w-full items-start gap-5 ml-3 mt-3 self-start max-md:ml-2.5">
                     <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5 self-start hover:cursor-pointer">
@@ -439,10 +439,10 @@ const Home = (props) => {
                       Tips{" "}
                     </div>
                   </div>
-                  <div className="mt-6 text-xl font-medium text-black">
+                  <div className="mt-6 text-xl font-medium text-black px-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   </div>
-                  <div className="mt-4 text-xl text-zinc-500">
+                  <div className="mt-4 px-4 text-xl text-zinc-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut
                   </div>
@@ -454,7 +454,7 @@ const Home = (props) => {
                     loading="lazy"
                     src={blogimg}
                     alt="blog3"
-                    className="self-start object-cover object-center w-full overflow-hidden aspect-square"
+                    className="self-start object-cover object-center w-full overflow-hidden aspect-square px-3 rounded-t-2xl"
                   />
                   <div className="flex w-[346px] max-w-full items-start gap-5 ml-3 mt-3 self-start max-md:ml-2.5">
                     <div className="text-zinc-500 text-center text-lg w-[262px] mt-1.5 self-start hover:cursor-pointer">
@@ -464,10 +464,10 @@ const Home = (props) => {
                       Tips{" "}
                     </div>
                   </div>
-                  <div className="mt-6 text-xl font-medium text-black">
+                  <div className="mt-6 text-xl font-medium text-black px-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   </div>
-                  <div className="mt-4 text-xl text-zinc-500">
+                  <div className="mt-4 px-4 text-xl text-zinc-500">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut
                   </div>
@@ -475,7 +475,7 @@ const Home = (props) => {
               </div>
             </div>
             <div className="flex justify-center mt-20 text-center">
-              <button className="text-white bg-green-500 rounded-md w-[164px] h-[62.537px] hover:shadow-md">
+              <button className="text-white bg-green-500 rounded-md w-[140px] h-[40px] md:w-[164px] md:h-[42.537px] hover:shadow-md">
                 Read More...
               </button>
             </div>
@@ -538,7 +538,7 @@ const Home = (props) => {
         <div className="flex flex-col">
           <div className="bg-gray-50 self-center flex w-full max-w-[1400px] flex-col px-5 py-11 rounded-2xl max-md:max-w-full">
             <div className="self-center flex w-[617px] max-w-full flex-col">
-              <div className="text-black text-center text-2xl font-semibold self-center ml-2.5 whitespace-nowrap max-md:max-w-full">
+              <div className="text-black text-center text-xl md:text-2xl font-semibold self-center md:ml-2.5 whitespace-nowrap max-md:max-w-full">
                 Have Questions or Need Assistance?{" "}
               </div>
               <div className="self-stretch mt-5 text-xl text-center text-neutral-600 whitespace-nowrap max-md:max-w-full">

@@ -15,6 +15,11 @@ import Doctors from "./pages/Doctors";
 import DoctorProfile from "./pages/DoctorProfile";
 import ProductPreview from "./components/ProductPreview";
 import AboutUs from "./components/AboutUs";
+import Payment1 from "./components/Payment1";
+import Payment2 from "./components/Payment2";
+import Payment3 from "./components/Payment3";
+import Payment4 from "./components/Payment4";
+import DateAndTime from "./components/DateAndTime";
 
 function App() {
   const [isLoginClicked, setIsLoginClicked] = useState(false);
@@ -53,6 +58,11 @@ function App() {
             <Route path="/terms&condition" element={<TermsCondition/>} />
             <Route path="/product-preview" element={<ProductPreview/>} />
             <Route path="/aboutus" element={<AboutUs/>} />
+            <Route path="/payment1" element={<Payment1/>} />
+            <Route path="/payment2" element={<Payment2/>} />
+            <Route path="/payment3" element={<Payment3/>} />
+            <Route path="/payment4" element={<Payment4/>} />
+            <Route path="/dateandtime" element={<DateAndTime/>} />
           </Routes>
           <FooterNav />
         </>

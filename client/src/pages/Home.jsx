@@ -12,7 +12,7 @@ import blogimg from "../assets/blogimg.png";
 import chechmark from "../assets/CheckMark.png";
 import { useRef, useEffect } from "react";
 // import { BiLogoWhatsappSquare } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 import VerticalScroll from "../components/VerticalScroll";
 import SearchBar from "../components/SearchBar";
@@ -22,12 +22,18 @@ import botlogo from "../assets/botlogo.png";
 import whatsappimg from "../assets/whatsappimg.png";
 import { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import HomeVisitModal from "../components/HomeVisitModal";
+
 const Home = (props) => {
   let setIsLoginClicked = props.setIsLoginClicked;
   const [isbotplay, setisbotplay] = useState(false);
   const [ischat, setischat] = useState(false);
   const [iswhatsapp, setiswhatsapp] = useState(false);
   const [islistselected, setislistselected] = useState(false);
+  const navigate = useNavigate();
+  const [showHomeVisitModal, setShowHomeVisitModal] = useState(false);
+  const modalRef = useRef();
+
   const BotActiveHandler = () => {
     setisbotplay(!isbotplay);
   };
@@ -124,7 +130,7 @@ const Home = (props) => {
               />
               <button className="w-full max-w-[367px] h-[46px] text-lg text-white font-semibold bg-green-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50">
                 <a
-                  href="https://wa.me/9928088430"
+                  href="https://wa.me/9087654321"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -208,7 +214,10 @@ const Home = (props) => {
               </p>
             </div>
             <div className="px-5 mt-5 text-sm font-normal text-slate-500 mx-auto">
-              <p>High quality physiotherapy care at our PhysioPlus Centre near you. Best Treatment for Ortho / Neuro and many more Issues</p>
+              <p>
+                High quality physiotherapy care at our PhysioPlus Centre near
+                you. Best Treatment for Ortho / Neuro and many more Issues
+              </p>
             </div>
             <div className="px-5 mt-5">
               <img
@@ -219,20 +228,33 @@ const Home = (props) => {
               />
             </div>
             <div className="px-5">
-              <button className="border border-zinc-400 text-green-700 text-sm font-semibold rounded-lg mt-4 mx-auto px-16 py-2 hover:text-white hover:bg-green-600 transition-all 3s ease">
-              Schedule a Treatment
+              <button
+                className="border border-zinc-400 text-green-700 text-sm font-semibold rounded-lg mt-4 mx-auto px-16 py-2 hover:text-white hover:bg-green-600 transition-all 3s ease"
+                onClick={() => navigate("/doctors")}
+              >
+                Schedule a Treatment
               </button>
             </div>
           </div>
 
-          <div className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md mt-5 sm:hover:cursor-pointer sm:hover:-translate-y-5 duration-700 transition-all 5s ease">
+          <div
+            className="border w-[320px] h-[460px] rounded-2xl groupBgCard shadow-md mt-5 sm:hover:cursor-pointer sm:hover:-translate-y-5 duration-700 transition-all 5s ease"
+            onClick={() => {
+              setShowHomeVisitModal(true);
+              document.body.style.overflowY = 'hidden';
+            }}
+          >
             <div className="text-center mt-7 mx-auto">
               <p className="text-3xl font-bold">
                 Physio's Home Visits Availability
               </p>
             </div>
             <div className="px-5 mt-5 text-sm font-normal text-slate-500 mx-auto">
-              <p>Home Visits by certified PhysioPlus Physiotherapists for Patients with moility issues & for patients looking for convenience</p>
+              <p>
+                Home Visits by certified PhysioPlus Physiotherapists for
+                Patients with moility issues & for patients looking for
+                convenience
+              </p>
             </div>
             <div className="px-5 mt-5">
               <img
@@ -244,7 +266,7 @@ const Home = (props) => {
             </div>
             <div className="px-5">
               <button className="border border-zinc-400 text-green-700 text-sm font-semibold rounded-lg mt-4 mx-auto px-16 py-2 hover:text-white hover:bg-green-600 transition-all 3s ease">
-              Schedule a Treatment
+                Schedule a Treatment
               </button>
             </div>
           </div>
@@ -257,7 +279,8 @@ const Home = (props) => {
             </div>
             <div className="px-5 mt-5 text-sm font-normal text-slate-500 mx-auto">
               <p>
-                Certified PhysioPlus therapists offer online sessions for patients with mobility challenges and those seeking convenience.
+                Certified PhysioPlus therapists offer online sessions for
+                patients with mobility challenges and those seeking convenience.
               </p>
             </div>
             <div className="px-5 mt-5">
@@ -270,16 +293,21 @@ const Home = (props) => {
             </div>
             <div className="px-5">
               <button className="border border-zinc-400 text-green-700 text-sm font-semibold rounded-lg mt-4 mx-auto px-16 py-2 hover:text-white hover:bg-green-600 transition-all 3s ease">
-              Schedule a Treatment
+                Schedule a Treatment
               </button>
             </div>
           </div>
         </div>
       </section>
 
+      <div>
+        {showHomeVisitModal && (
+          <HomeVisitModal onClose={() => {setShowHomeVisitModal(false);document.body.style.overflowY = 'unset';}} />
+        )}
+      </div>
 
-      <section className="mt-32 mb-10">
-        <div className="text-4xl font-semibold text-black ml-28 w-[765px]">
+      <section className="max-w[1280px] md:mx-auto mt-10 md:mt-32 mb-10">
+        <div className="text-xl md:text-4xl font-bold text-black text-start max-w-[765px] md:mx-16 px-5">
           Irresistible Offers Awaits You..
         </div>
         <Slider />

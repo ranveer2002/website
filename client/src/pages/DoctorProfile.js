@@ -50,7 +50,7 @@ const DoctorProfile = () => {
               <button
                 style={{ background: "rgba(57, 201, 133, 0.15)" }}
                 className="px-4 py-1 rounded-md text-green-600 text-sm font-semibold"
-                onClick={()=>navigate("/payment1")}
+                onClick={()=>navigate("/dateandtime")}
               >
                 Make Appointment
               </button>
@@ -121,7 +121,7 @@ const DoctorProfile = () => {
             <p className="text-neutral-500 text-base">example@gmail.com</p>
           </div>
           <button className="bg-green-700 px-5 py-1 text-white text-sm font-medium rounded-md mt-4"
-          onClick={()=>navigate("/payment1")}>
+          onClick={()=>navigate("/dateandtime")}>
             Book an Appointment
           </button>
         </div>

@@ -13,6 +13,7 @@ const Payment1 = () => {
           <input
             id="speciality"
             type="text"
+            required
             className="w-[300px] py-1 border border-slate-600 block mt-2 outline-none px-2 "
           ></input>
         </div>
@@ -23,6 +24,7 @@ const Payment1 = () => {
           <input
             id="speciality"
             type="text"
+            required
             placeholder="Enter Your Name"
             className="w-[300px] py-1 border border-slate-600 block mt-2 outline-none px-2 "
           ></input>
@@ -36,6 +38,7 @@ const Payment1 = () => {
             <input
               id="speciality"
               type="tel"
+              required
               placeholder="Enter Mobile Number"
               className="w-[248px] py-1 border border-slate-600 block mt-2 outline-none px-2 "
             ></input>

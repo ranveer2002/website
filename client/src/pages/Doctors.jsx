@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import FilterSideBar from "../components/FilterSideBar";
 import ProfessionalCard from "../components/ProfessionalCard";
 import { Link } from "react-router-dom";
+import { MdKeyboardArrowLeft , MdKeyboardArrowRight} from "react-icons/md";
+
 function Doctors() {
   const professionals = [
     {
@@ -482,6 +484,32 @@ function Doctors() {
       available: "Available Today",
     },
   ];
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const recordPerPage = 10;
+  const lastIndex = currentPage * recordPerPage;
+  const firstINdex = lastIndex - recordPerPage;
+  const records = professionals.slice(firstINdex, lastIndex);
+  const nPage = Math.ceil(professionals.length / recordPerPage);
+  const numbers = [...Array(nPage + 1).keys()].slice(1);
+
+  function prePage() {
+    if (currentPage <= 1) {
+      setCurrentPage(1);
+    } else if (currentPage !== firstINdex) {
+      setCurrentPage(currentPage - 1);
+    }
+  }
+  function changeCurrentPage(id) {
+    setCurrentPage(id);
+  }
+  function nextPage() {
+    if (currentPage >= nPage) {
+      setCurrentPage(nPage);
+    } else if(currentPage !== nPage){
+      setCurrentPage(currentPage + 1);
+    }
+  }
   return (
     <div className="flex flex-col bg-white">
       {" "}
@@ -512,10 +540,42 @@ function Doctors() {
             <FilterSideBar />
             <div className="flex-col flex-1 space-y-6">
               <Link to="/doctorprofile">
-                {professionals.map((professional, index) => (
+                {records.map((professional, index) => (
                   <ProfessionalCard key={index} {...professional} />
                 ))}
               </Link>
+
+              <div className="flex gap-3 cursor-pointer">
+                <div
+                  className="flex justify-center items-center gap-1 border px-3 py-1 text-white text-lg rounded-md bg-green-500 hover:bg-green-700"
+                  onClick={prePage}
+                >
+                  <MdKeyboardArrowLeft size={22}/>
+                  Prev
+                </div>
+
+                {numbers.map((n, i) => (
+                  <div
+                    className={`border px-3 py-1 text-white rounded-md ${
+                      currentPage === n
+                        ? "bg-green-500 "
+                        : "bg-green-300 text-white font-semibold"
+                    }`}
+                    onClick={() => changeCurrentPage(n)}
+                    key={i}
+                  >
+                    {n}
+                  </div>
+                ))}
+
+                <div
+                  className="flex justify-center items-center gap-1 border px-3 py-1 text-white text-lg  bg-green-500 hover:bg-green-700 rounded-md"
+                  onClick={nextPage}
+                >
+                  Next
+                  <MdKeyboardArrowRight size={22}/>
+                </div>
+              </div>
             </div>
           </div>
         </div>
